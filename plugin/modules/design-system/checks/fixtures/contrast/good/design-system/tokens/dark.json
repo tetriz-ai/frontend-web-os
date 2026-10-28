@@ -1,0 +1,303 @@
+{
+  "color": {
+    "$type": "color",
+    "surface": {
+      "base": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0353,
+            0.0353,
+            0.0431
+          ],
+          "hex": "#09090b"
+        }
+      },
+      "elevated": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0941,
+            0.0941,
+            0.1059
+          ],
+          "hex": "#18181b"
+        }
+      },
+      "subtle": {
+        "$value": "rgb(255 255 255 / 0.05)"
+      },
+      "interactive": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.2471,
+            0.2471,
+            0.2745
+          ],
+          "hex": "#3f3f46"
+        }
+      }
+    },
+    "text": {
+      "primary": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9804,
+            0.9804,
+            0.9804
+          ],
+          "hex": "#fafafa"
+        }
+      },
+      "secondary": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8314,
+            0.8314,
+            0.8471
+          ],
+          "hex": "#d4d4d8"
+        }
+      },
+      "muted": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6314,
+            0.6314,
+            0.6667
+          ],
+          "hex": "#a1a1aa"
+        }
+      },
+      "disabled": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.3216,
+            0.3216,
+            0.3569
+          ],
+          "hex": "#52525b"
+        }
+      },
+      "inverted": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0941,
+            0.0941,
+            0.1059
+          ],
+          "hex": "#18181b"
+        }
+      }
+    },
+    "border": {
+      "faint": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1529,
+            0.1529,
+            0.1647
+          ],
+          "hex": "#27272a"
+        }
+      },
+      "default": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.2471,
+            0.2471,
+            0.2745
+          ],
+          "hex": "#3f3f46"
+        }
+      }
+    },
+    "brand": {
+      "primary": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.5686,
+            0.6549,
+            1
+          ],
+          "hex": "#91a7ff"
+        }
+      },
+      "primary-hover": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6471,
+            0.7216,
+            1
+          ],
+          "hex": "#a5b8ff"
+        }
+      },
+      "primary-foreground": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0431,
+            0.0784,
+            0.2157
+          ],
+          "hex": "#0b1437"
+        }
+      },
+      "accent": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1216,
+            0.1647,
+            0.3608
+          ],
+          "hex": "#1f2a5c"
+        }
+      },
+      "accent-foreground": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8588,
+            0.8941,
+            1
+          ],
+          "hex": "#dbe4ff"
+        }
+      }
+    },
+    "status": {
+      "critical": {
+        "bg": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.2706,
+              0.0392,
+              0.0392
+            ],
+            "hex": "#450a0a"
+          }
+        },
+        "text": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9882,
+              0.6471,
+              0.6471
+            ],
+            "hex": "#fca5a5"
+          }
+        }
+      },
+      "warning": {
+        "bg": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.2627,
+              0.0784,
+              0.0275
+            ],
+            "hex": "#431407"
+          }
+        },
+        "text": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9922,
+              0.7294,
+              0.4549
+            ],
+            "hex": "#fdba74"
+          }
+        }
+      },
+      "caution": {
+        "bg": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.2588,
+              0.1255,
+              0.0235
+            ],
+            "hex": "#422006"
+          }
+        },
+        "text": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9922,
+              0.8784,
+              0.2784
+            ],
+            "hex": "#fde047"
+          }
+        }
+      },
+      "info": {
+        "bg": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0902,
+              0.1451,
+              0.3294
+            ],
+            "hex": "#172554"
+          }
+        },
+        "text": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.5765,
+              0.7725,
+              0.9922
+            ],
+            "hex": "#93c5fd"
+          }
+        }
+      },
+      "success": {
+        "bg": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0196,
+              0.1804,
+              0.0863
+            ],
+            "hex": "#052e16"
+          }
+        },
+        "text": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.5255,
+              0.9373,
+              0.6745
+            ],
+            "hex": "#86efac"
+          }
+        }
+      }
+    }
+  }
+}

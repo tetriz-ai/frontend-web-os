@@ -1,0 +1,4 @@
+@import "tailwindcss";
+/* Generated from design-system/ by `fwos tokens build`. */
+@import "../styles/generated/tokens.css";
+@import "../styles/generated/theme.css";

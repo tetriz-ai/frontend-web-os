@@ -1,0 +1,10 @@
+{
+  "status": 201,
+  "body": {
+    "id": "itm_04",
+    "url": "https://example.com/articles/reading-lists",
+    "title": "example.com",
+    "savedAt": "2026-10-07T12:00:00.000Z",
+    "read": false
+  }
+}

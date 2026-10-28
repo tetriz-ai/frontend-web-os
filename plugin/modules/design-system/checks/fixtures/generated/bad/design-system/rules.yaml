@@ -1,0 +1,12 @@
+# Project overrides for fwos's rule pack. Every rule can be turned off, softened to a review
+# finding, or scoped. `fwos check` reads this file; nothing here needs a model.
+#
+# rules:
+#   no-raw-date-format: off
+#   no-pie-chart:
+#     hardness: review          # check | review | off
+#     exclude: ["src/legacy/**"]
+# ignore: ["src/vendor/**"]    # paths every rule skips
+schema: 1
+rules: {}
+ignore: []

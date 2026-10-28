@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "components": [
+    {
+      "id": "button",
+      "status": "stable",
+      "source": "fwos",
+      "requiredStates": [
+        "default",
+        "loading",
+        "disabled"
+      ],
+      "description": "One primary action per view; width stays locked while loading."
+    },
+    {
+      "id": "text-field",
+      "status": "stable",
+      "source": "fwos",
+      "requiredStates": [
+        "default",
+        "invalid",
+        "disabled"
+      ],
+      "description": "Label, input and message; validates on blur."
+    },
+    {
+      "id": "card",
+      "status": "stable",
+      "source": "fwos",
+      "requiredStates": [
+        "default"
+      ],
+      "description": "A bordered surface for grouped content."
+    },
+    {
+      "id": "badge",
+      "status": "stable",
+      "source": "fwos",
+      "requiredStates": [],
+      "description": "A short status label."
+    },
+    {
+      "id": "alert",
+      "status": "stable",
+      "source": "fwos",
+      "requiredStates": [
+        "critical",
+        "info"
+      ],
+      "description": "An inline message with a reason and, for errors, a retry."
+    },
+    {
+      "id": "skeleton",
+      "status": "stable",
+      "source": "fwos",
+      "requiredStates": [],
+      "description": "First-load placeholder only; never on refetch."
+    },
+    {
+      "id": "spinner",
+      "status": "stable",
+      "source": "fwos",
+      "requiredStates": [],
+      "description": "Inline progress for a button or a small region; respects reduced motion."
+    },
+    {
+      "id": "empty-state",
+      "status": "stable",
+      "source": "fwos",
+      "requiredStates": [
+        "zero",
+        "filtered"
+      ],
+      "description": "Zero state vs filtered-empty, each with its own next step."
+    },
+    {
+      "id": "state-handler",
+      "status": "stable",
+      "source": "fwos",
+      "requiredStates": [
+        "loading",
+        "empty",
+        "error",
+        "ready"
+      ],
+      "description": "Page-level wrapper that renders loading, empty, error or the content."
+    }
+  ]
+}

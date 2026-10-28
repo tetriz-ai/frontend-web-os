@@ -1,0 +1,8 @@
+{
+  "schema": 2,
+  "pluginVersion": "9.0.0",
+  "mode": "new",
+  "platforms": [
+    "web"
+  ]
+}

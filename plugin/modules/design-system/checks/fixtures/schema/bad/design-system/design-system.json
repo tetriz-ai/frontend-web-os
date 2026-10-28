@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "name": "Neutral starter",
+  "platforms": ["web"],
+  "tokens": {
+    "shared": ["tokens/base.json"],
+    "modes": {
+      "light": ["tokens/light.json"],
+      "dark": ["tokens/dark.json"]
+    }
+  },
+  "defaultMode": "light",
+  "assumed": [
+    "Neutral starter colours, light and dark, picked to pass 4.5:1 text contrast. Swap in your brand when you have one."
+  ],
+  "components": "components.json",
+  "voice": "voice.md"
+}

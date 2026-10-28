@@ -1,0 +1,45 @@
+{
+  "name": "fwos",
+  "displayName": "Frontend Web OS",
+  "version": "0.1.0",
+  "description": "From an idea to a tested Next.js and Tailwind v4 web app: interview, research, architecture, design system, screens, spec, tests-first build and acceptance, with checks that need no model. Tested with Claude Code 2.1.278 and Codex CLI 0.155.",
+  "author": {
+    "name": "tetriz-ai"
+  },
+  "homepage": "https://github.com/tetriz-ai/frontend-web-os",
+  "repository": "https://github.com/tetriz-ai/frontend-web-os",
+  "license": "MIT",
+  "keywords": [
+    "frontend",
+    "nextjs",
+    "design-system",
+    "spec",
+    "acceptance-criteria",
+    "testing",
+    "modular-monolith"
+  ],
+  "skills": [
+    "./shells/flow/skills",
+    "./modules/accept/skills",
+    "./modules/architecture/skills",
+    "./modules/build/skills",
+    "./modules/design-system/skills",
+    "./modules/discovery/skills",
+    "./modules/research/skills",
+    "./modules/rules/skills",
+    "./modules/screens/skills",
+    "./modules/spec/skills",
+    "./platforms/web/skills"
+  ],
+  "agents": [
+    "./modules/accept/agents/adjudicator.md",
+    "./modules/accept/agents/qa-explorer.md",
+    "./modules/build/agents/builder.md",
+    "./modules/research/agents/researcher.md",
+    "./modules/rules/agents/lens-reviewer.md",
+    "./modules/spec/agents/spec-reviewer.md",
+    "./modules/tests/agents/test-planner.md",
+    "./modules/tests/agents/test-writer.md"
+  ],
+  "hooks": "./shells/hooks/hooks.json"
+}

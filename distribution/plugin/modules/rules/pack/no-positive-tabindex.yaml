@@ -1,0 +1,16 @@
+id: no-positive-tabindex
+title: Keyboard order follows the page
+rule: R46
+platforms: [web, electron]
+hardness: check
+files: ["**/*.{tsx,jsx}"]
+exclude: []
+pattern: 'tabIndex=\{?\s*[''"]?[1-9]'
+message: A positive tabIndex reorders keyboard focus away from what people see. Fix the DOM order instead.
+fix: Use tabIndex={0} or -1 only, and order the markup the way it reads.
+knowledge: modules/rules/knowledge/accessibility.md
+fixtures:
+  bad:
+    - "<button tabIndex={2}>Save</button>"
+  good:
+    - "<div role=\"button\" tabIndex={0}>Save</div>"

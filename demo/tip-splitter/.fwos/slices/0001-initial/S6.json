@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "slice": "S6",
+  "change": "0001-initial",
+  "title": "Offline and add to home screen",
+  "platform": "web",
+  "modules": ["app"],
+  "screens": ["calculator"],
+  "components": [],
+  "states": [],
+  "acs": ["AC-calc-20", "AC-calc-21"],
+  "dependsOn": ["S1", "S3"],
+  "status": "done"
+}

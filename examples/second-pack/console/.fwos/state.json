@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "pluginVersion": "0.1.0",
+  "name": "Tidewatch console",
+  "mode": "new",
+  "platforms": ["web"],
+  "createdAt": "2026-10-23",
+  "paths": {
+    "docs": "docs/product",
+    "designSystem": "design",
+    "contract": "packages/port-api",
+    "tokensOut": "packages/theme/generated",
+    "apps": { "web": "apps/console" },
+    "ui": { "web": "apps/console/src/components/ui" },
+    "source": ["apps/console/src/**"],
+    "results": ["results/*.xml"]
+  }
+}

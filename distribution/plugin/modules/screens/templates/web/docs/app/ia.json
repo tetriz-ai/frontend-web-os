@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "roles": ["user"],
+  "flags": [],
+  "pages": [
+    {
+      "id": "home",
+      "title": "{{APP_NAME}}",
+      "route": "/",
+      "kind": "nav",
+      "order": 1,
+      "states": ["ready"],
+      "deepLink": "/"
+    }
+  ]
+}

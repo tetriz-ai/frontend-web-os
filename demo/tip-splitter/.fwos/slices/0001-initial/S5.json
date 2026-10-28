@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "slice": "S5",
+  "change": "0001-initial",
+  "title": "Screen-reader announcement and tap targets",
+  "platform": "web",
+  "modules": ["tip-calculator", "shared-ui"],
+  "screens": ["calculator"],
+  "components": ["segmented-control", "number-stepper", "button"],
+  "states": [],
+  "acs": ["AC-calc-18", "AC-calc-19", "AC-calc-22"],
+  "dependsOn": ["S3", "S4"],
+  "status": "done"
+}

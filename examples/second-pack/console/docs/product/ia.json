@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "roles": ["harbormaster", "pilot", "auditor"],
+  "flags": ["berth-auctions", "tide-forecast"],
+  "pages": [
+    {
+      "id": "overview",
+      "title": "Port overview",
+      "route": "/",
+      "kind": "nav",
+      "order": 1,
+      "states": ["loading", "ready", "degraded"]
+    },
+    {
+      "id": "berths",
+      "title": "Berths",
+      "route": "/berths",
+      "kind": "nav",
+      "order": 2,
+      "states": ["loading", "ready", "no-berths", "stale"]
+    },
+    {
+      "id": "berth",
+      "title": "Berth",
+      "route": "/berths/[berthId]",
+      "kind": "drilldown",
+      "parent": "berths",
+      "states": ["loading", "ready", "not-found"]
+    },
+    {
+      "id": "voyage",
+      "title": "Voyage",
+      "route": "/vessels/[imo]/voyages/[voyageId]",
+      "kind": "drilldown",
+      "parent": "berth",
+      "states": ["loading", "ready", "delayed"]
+    },
+    {
+      "id": "forecast",
+      "title": "Tide forecast",
+      "route": "/forecast",
+      "kind": "nav",
+      "order": 3,
+      "flag": "tide-forecast",
+      "states": ["loading", "ready", "offline"]
+    },
+    {
+      "id": "auctions",
+      "title": "Berth auctions",
+      "route": "/auctions",
+      "kind": "nav",
+      "order": 4,
+      "visibleTo": ["harbormaster"],
+      "flag": "berth-auctions",
+      "states": ["loading", "ready", "closed"]
+    },
+    {
+      "id": "audit",
+      "title": "Audit trail",
+      "route": "/audit/[[...range]]",
+      "kind": "nav",
+      "order": 5,
+      "visibleTo": ["harbormaster", "auditor"],
+      "states": ["loading", "ready", "forbidden"]
+    },
+    {
+      "id": "settings",
+      "title": "Settings",
+      "route": "/settings/[...section]",
+      "kind": "unlinked",
+      "unlinkedReason": "Opened from the account menu, which the identity provider's widget renders, not our code.",
+      "states": ["ready"]
+    },
+    {
+      "id": "berth-list",
+      "title": "Berth list (old address)",
+      "route": "/berth-list",
+      "kind": "redirect",
+      "redirectTo": "berths",
+      "states": ["ready"]
+    }
+  ]
+}

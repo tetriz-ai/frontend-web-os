@@ -1,0 +1,18 @@
+openapi: 3.1.0
+info: { title: fixture, version: '1' }
+paths:
+  /links:
+    get:
+      operationId: listItems
+      responses:
+        '200':
+          description: ok
+          content:
+            application/json:
+              schema: { type: array, items: { $ref: '#/components/schemas/Item' } }
+components:
+  schemas:
+    Item:
+      type: object
+      required: [id, url]
+      properties: { id: { type: string }, url: { type: string } }

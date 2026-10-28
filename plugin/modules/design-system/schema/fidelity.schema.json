@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:fidelity",
+  "title": ".fwos/fidelity.json",
+  "description": "The decisions a person recorded about an adopted design system with `fwos design-system decide`: each row, component or rendered difference that isn't preserved, accepted with a reason. `seen` is the hash of what was decided, so a decision goes stale when it changes.",
+  "type": "object",
+  "required": ["schema", "decisions"],
+  "properties": {
+    "schema": { "const": 1 },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["item", "decision", "reason", "by", "at", "seen"],
+        "properties": {
+          "item": { "type": "string", "minLength": 1 },
+          "decision": { "enum": ["replace", "omit", "intentional"] },
+          "reason": { "type": "string", "minLength": 1 },
+          "by": { "type": "string", "minLength": 1 },
+          "at": { "type": "string" },
+          "seen": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

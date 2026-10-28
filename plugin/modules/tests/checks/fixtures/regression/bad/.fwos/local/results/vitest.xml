@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<testsuites><testsuite name="fixture">
+  <testcase classname="app/members/members.test.tsx" name="lists members"><failure message="expected 3 rows, got 2"/></testcase>
+</testsuite></testsuites>

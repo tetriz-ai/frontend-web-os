@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:quarantine",
+  "title": ".fwos/quarantine.json",
+  "description": "Flaky tests held out of traceability. Each entry needs a reason, a name and an expiry date; after that date the check fails until the test is fixed or removed.",
+  "type": "object",
+  "required": ["schema", "tests"],
+  "properties": {
+    "schema": { "const": 1 },
+    "tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["match", "reason", "by", "until"],
+        "properties": {
+          "match": { "type": "string", "minLength": 1, "description": "A test name or an AC tag, matched as whole words." },
+          "reason": { "type": "string", "minLength": 1 },
+          "by": { "type": "string", "minLength": 1 },
+          "until": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "The last day the quarantine holds, as YYYY-MM-DD." }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

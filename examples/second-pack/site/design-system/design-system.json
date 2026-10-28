@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "name": "Tidewatch Site",
+  "platforms": ["web"],
+  "tokens": {
+    "shared": ["tokens/brand.json"],
+    "modes": {
+      "dark": ["tokens/night.json"]
+    }
+  },
+  "defaultMode": "dark",
+  "slots": {
+    "surface.base": "night.sky",
+    "surface.elevated": "night.cloud",
+    "surface.subtle": "night.fog",
+    "surface.interactive": "night.mist",
+    "text.primary": "night.star",
+    "text.secondary": "night.moon",
+    "text.muted": "night.haze",
+    "text.disabled": "night.dim",
+    "text.inverted": "night.void",
+    "border.faint": "night.rim",
+    "border.default": "night.edge",
+    "brand.primary": "beacon.lamp",
+    "brand.primary-foreground": "beacon.on-lamp",
+    "brand.primary-hover": "beacon.lamp-hover",
+    "brand.accent": "beacon.buoy",
+    "brand.accent-foreground": "beacon.on-buoy",
+    "status.critical.bg": "flare.red.ground",
+    "status.critical.text": "flare.red.glow",
+    "status.warning.bg": "flare.amber.ground",
+    "status.warning.text": "flare.amber.glow",
+    "status.caution.bg": "flare.yellow.ground",
+    "status.caution.text": "flare.yellow.glow",
+    "status.info.bg": "flare.blue.ground",
+    "status.info.text": "flare.blue.glow",
+    "status.success.bg": "flare.green.ground",
+    "status.success.text": "flare.green.glow",
+    "radius.sm": "curve.none",
+    "radius.md": "curve.hint",
+    "radius.lg": "curve.soft",
+    "font.sans": "letter.text",
+    "font.mono": "letter.code",
+    "type.display": "letter.headline",
+    "type.body": "letter.reading"
+  },
+  "components": "components.json",
+  "voice": "voice.md"
+}

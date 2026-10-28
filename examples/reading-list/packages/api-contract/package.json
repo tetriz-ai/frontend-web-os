@@ -1,0 +1,6 @@
+{
+  "name": "@app/api-contract",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The API contract (openapi.yaml) and the JSON fixtures every platform's tests share."
+}

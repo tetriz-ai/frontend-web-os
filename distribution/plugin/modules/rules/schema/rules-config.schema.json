@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:rules-config",
+  "title": "design-system/rules.yaml",
+  "description": "Project overrides for the rule pack, plus the project's own mechanical rules.",
+  "type": "object",
+  "required": ["schema"],
+  "properties": {
+    "schema": { "const": 1 },
+    "rules": {
+      "type": ["object", "null"],
+      "additionalProperties": {
+        "oneOf": [
+          { "const": "off" },
+          {
+            "type": "object",
+            "properties": {
+              "hardness": { "enum": ["check", "review", "guidance", "off"] },
+              "exclude": { "type": "array", "items": { "type": "string" } }
+            },
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "custom": { "type": ["array", "null"], "items": { "type": "object" } },
+    "ignore": { "type": ["array", "null"], "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

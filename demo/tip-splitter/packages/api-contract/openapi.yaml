@@ -1,0 +1,10 @@
+# The API contract. The architecture step fills in paths; fixtures go in fixtures/ as
+# <operationId>.<variant>.json holding { "status": 200, "body": ... }. `fwos contract mocks`
+# turns them into a fail-closed mock fetch, and `fwos check` validates every fixture here.
+openapi: 3.1.0
+info:
+  title: "Tip Splitter API"
+  version: 0.1.0
+paths: {}
+components:
+  schemas: {}

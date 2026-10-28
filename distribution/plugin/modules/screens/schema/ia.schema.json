@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:ia",
+  "title": "docs/app/ia.json",
+  "description": "Every screen: a stable ID, where it lives, how it's reached, who sees it and the states it must show. IDs persist when a page moves.",
+  "type": "object",
+  "required": ["schema", "roles", "pages"],
+  "properties": {
+    "schema": { "const": 1 },
+    "roles": { "type": "array", "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" }, "minItems": 1, "uniqueItems": true },
+    "flags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "kind", "states"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+          "title": { "type": "string" },
+          "surface": { "enum": ["route", "window", "scene", "menu-item", "menu-bar-extra", "settings"] },
+          "route": { "type": "string", "pattern": "^/" },
+          "kind": { "enum": ["nav", "drilldown", "redirect", "unlinked"] },
+          "parent": { "type": ["string", "null"] },
+          "order": { "type": "number" },
+          "visibleTo": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+          "flag": { "type": "string" },
+          "states": { "type": "array", "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" }, "uniqueItems": true },
+          "deepLink": { "type": "string" },
+          "redirectTo": { "type": "string" },
+          "unlinkedReason": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

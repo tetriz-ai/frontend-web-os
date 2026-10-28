@@ -1,0 +1,7 @@
+{
+  "status": 200,
+  "body": {
+    "stale": true,
+    "berths": [{ "id": "b4", "name": "Berth 4", "maxDraught": 14.5, "arrival": "2026-10-23T14:05:00Z", "vessel": { "name": "Morning Star", "imo": "9321483", "voyageId": "v118" } }]
+  }
+}

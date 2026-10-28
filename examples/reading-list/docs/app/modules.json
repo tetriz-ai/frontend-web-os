@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "modules": [
+    { "name": "app", "path": "apps/web/app", "kind": "app", "dependsOn": ["*"], "description": "Next.js routes: thin, they wire features to URLs." },
+    { "name": "screens", "path": "apps/web/src/screens", "kind": "app", "dependsOn": ["*"], "entry": ["registry.tsx"], "description": "Dev-only screens on fake data, in every state." },
+    { "name": "reading-list", "path": "apps/web/src/features/reading-list", "kind": "feature", "dependsOn": ["shared-ui", "shared-lib", "api-contract"], "description": "Save, list, mark read, filter and delete links. Local mode: a repository over browser storage that implements the API contract's operations." },
+    { "name": "shared-ui", "path": "apps/web/src/shared/ui", "kind": "shared", "dependsOn": ["shared-lib"], "description": "Registered components, styled only through design-system slots." },
+    { "name": "shared-lib", "path": "apps/web/src/shared/lib", "kind": "shared", "dependsOn": [], "description": "Small helpers: class names, the one date and number formatter." },
+    { "name": "shared-nav", "path": "apps/web/src/shared/nav", "kind": "shared", "dependsOn": [], "entry": ["nav.tsx"], "description": "The nav, read from docs/app/ia.json." },
+    { "name": "shared-data", "path": "apps/web/src/shared/data", "kind": "shared", "dependsOn": [], "entry": ["query-provider.tsx"], "description": "The data-fetching provider." },
+    { "name": "api-contract", "path": "packages/api-contract", "kind": "shared", "dependsOn": [], "entry": ["generated/mock-fetch.ts"], "description": "The contract and its fail-closed mock fetch." }
+  ]
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<testsuites><testsuite name="fixture">
+  <testcase classname="fixture.test.tsx" name="renders @state:button:default"/>
+  <testcase classname="fixture.test.tsx" name="spins @state:button:loading"/>
+</testsuite></testsuites>

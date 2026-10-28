@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:manifest",
+  "title": ".fwos/manifest.json",
+  "description": "Files fwos may regenerate, with the checksum it last wrote. If yours differs, fwos stops and names the file.",
+  "type": "object",
+  "required": ["schema", "files"],
+  "properties": {
+    "schema": { "const": 1 },
+    "files": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["sha", "kind", "pluginVersion"],
+        "properties": {
+          "sha": { "type": "string" },
+          "kind": { "enum": ["generated", "fwos"] },
+          "source": { "type": "string" },
+          "pluginVersion": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

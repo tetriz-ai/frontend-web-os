@@ -1,0 +1,9 @@
+{
+  "name": "tidewatch-console",
+  "private": true,
+  "packageManager": "pnpm@10.34.5",
+  "scripts": {
+    "check": "fwos check",
+    "tokens": "fwos tokens build"
+  }
+}

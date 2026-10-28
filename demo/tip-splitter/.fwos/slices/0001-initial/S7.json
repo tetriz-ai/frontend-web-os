@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "slice": "S7",
+  "change": "0001-initial",
+  "title": "Real use: split 3 real bills on a phone",
+  "platform": "web",
+  "modules": ["app", "tip-calculator"],
+  "screens": ["calculator"],
+  "components": [],
+  "states": ["calculator:empty", "calculator:ready", "calculator:rounded"],
+  "acs": ["AC-calc-1", "AC-calc-2", "AC-calc-6", "AC-calc-17", "AC-calc-20"],
+  "dependsOn": ["S4", "S5", "S6"],
+  "status": "done"
+}

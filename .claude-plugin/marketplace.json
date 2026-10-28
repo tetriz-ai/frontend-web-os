@@ -1,0 +1,17 @@
+{
+  "name": "frontend-web-os",
+  "owner": {
+    "name": "tetriz-ai"
+  },
+  "metadata": {
+    "description": "Frontend Web OS: from an idea to a tested Next.js web app, inside Claude Code or Codex."
+  },
+  "plugins": [
+    {
+      "name": "fwos",
+      "source": "./distribution/plugin",
+      "description": "From an idea to a tested Next.js and Tailwind v4 web app: interview, research, architecture, design system, screens, spec, tests-first build and acceptance, with checks that need no model.",
+      "category": "development"
+    }
+  ]
+}

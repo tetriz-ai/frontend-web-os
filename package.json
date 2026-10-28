@@ -1,0 +1,80 @@
+{
+  "name": "fwos-check",
+  "version": "0.1.0",
+  "description": "The fwos CLI from Frontend Web OS: 24 checks for CI that need no model, covering design tokens, module walls and requirements proven by passing tests.",
+  "license": "MIT",
+  "type": "module",
+  "author": "tetriz-ai",
+  "homepage": "https://github.com/tetriz-ai/frontend-web-os#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tetriz-ai/frontend-web-os.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tetriz-ai/frontend-web-os/issues"
+  },
+  "keywords": [
+    "claude-code",
+    "plugin",
+    "frontend",
+    "nextjs",
+    "design-system",
+    "testing",
+    "acceptance-criteria"
+  ],
+  "bin": {
+    "fwos": "scripts/npm/fwos.mjs"
+  },
+  "files": [
+    "plugin/dist/fwos.mjs",
+    "plugin/dist/THIRD-PARTY-LICENSES.txt",
+    "plugin/modules/*/schema/**",
+    "plugin/modules/*/templates/**",
+    "plugin/modules/*/starter/**",
+    "plugin/modules/rules/pack/**",
+    "plugin/.claude-plugin/plugin.json",
+    "CHANGELOG.md",
+    "LICENSE",
+    "NOTICE",
+    "scripts/npm/fwos.mjs",
+    "plugin/platforms/*/templates/**"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.34.5",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "FWOS_E2E=1 vitest run scripts/tests/e2e.test.ts scripts/tests/adopt-unrelated-app.test.ts scripts/tests/gallery.test.ts",
+    "fixtures": "node scripts/make-fixtures.ts",
+    "repo-check": "node scripts/repo-check.ts",
+    "verify": "pnpm typecheck && pnpm lint && pnpm build && pnpm test && pnpm repo-check && pnpm fixtures:vendor",
+    "test:codex": "FWOS_CODEX=1 vitest run scripts/tests/codex-live.test.ts",
+    "lint": "eslint .",
+    "fixtures:vendor": "node scripts/refresh-demo-vendor.ts --check"
+  },
+  "devDependencies": {
+    "@babel/core": "8.0.9",
+    "@babel/eslint-parser": "8.0.7",
+    "@babel/parser": "8.0.8",
+    "@types/node": "^26.6.4",
+    "ajv": "^8.20.0",
+    "esbuild": "^0.28.2",
+    "eslint": "10.13.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3",
+    "yaml": "^2.9.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ],
+    "overrides": {
+      "fast-uri": "3.1.9"
+    }
+  },
+  "private": true
+}

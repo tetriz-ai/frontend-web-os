@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "files": {
+    "styles/generated/tokens.css": {
+      "sha": "0795f904715b",
+      "kind": "generated",
+      "pluginVersion": "0.1.0",
+      "source": "design-system/"
+    },
+    "styles/generated/theme.css": {
+      "sha": "9eea3a24fd50",
+      "kind": "generated",
+      "pluginVersion": "0.1.0",
+      "source": "design-system/"
+    }
+  }
+}

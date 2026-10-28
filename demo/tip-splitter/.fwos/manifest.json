@@ -1,0 +1,497 @@
+{
+  "schema": 1,
+  "files": {
+    "packages/tokens/generated/tokens.css": {
+      "sha": "d8e41376f0b9",
+      "kind": "generated",
+      "pluginVersion": "0.1.0",
+      "source": "design-system/"
+    },
+    "packages/tokens/generated/theme.css": {
+      "sha": "ed02ed3ca166",
+      "kind": "generated",
+      "pluginVersion": "0.1.0",
+      "source": "design-system/"
+    },
+    ".fwos/cli/dist/fwos.mjs": {
+      "sha": "dee6e46950d6",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin dist/fwos.mjs"
+    },
+    ".fwos/cli/dist/THIRD-PARTY-LICENSES.txt": {
+      "sha": "1fe8e8232fb3",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin dist/THIRD-PARTY-LICENSES.txt"
+    },
+    ".fwos/cli/LICENSE": {
+      "sha": "ab60101778e8",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin LICENSE"
+    },
+    ".fwos/cli/NOTICE": {
+      "sha": "f3a93b0154f5",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin NOTICE"
+    },
+    ".fwos/cli/modules/rules/pack/img-needs-alt.yaml": {
+      "sha": "ccf21e709345",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/rules/pack/img-needs-alt.yaml"
+    },
+    ".fwos/cli/modules/rules/pack/no-dangerous-html.yaml": {
+      "sha": "11710e739260",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/rules/pack/no-dangerous-html.yaml"
+    },
+    ".fwos/cli/modules/rules/pack/no-fixed-sleep.yaml": {
+      "sha": "3c3eb6e26679",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/rules/pack/no-fixed-sleep.yaml"
+    },
+    ".fwos/cli/modules/rules/pack/no-pie-chart.yaml": {
+      "sha": "d955ce7dc9df",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/rules/pack/no-pie-chart.yaml"
+    },
+    ".fwos/cli/modules/rules/pack/no-positive-tabindex.yaml": {
+      "sha": "f9d2fbfc573a",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/rules/pack/no-positive-tabindex.yaml"
+    },
+    ".fwos/cli/modules/rules/pack/no-raw-intl.yaml": {
+      "sha": "503f89c4d44e",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/rules/pack/no-raw-intl.yaml"
+    },
+    ".fwos/cli/modules/rules/pack/no-storage-in-ui.yaml": {
+      "sha": "1e2fcebd87ac",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/rules/pack/no-storage-in-ui.yaml"
+    },
+    ".fwos/cli/package.json": {
+      "sha": "8fce0a33f3ba",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "fwos scaffold"
+    },
+    "docs/app/reports/acceptance.md": {
+      "sha": "a9b1499ea6f2",
+      "kind": "generated",
+      "pluginVersion": "0.1.0",
+      "source": "fwos report"
+    },
+    ".fwos/cli/modules/design-system/starter/components.json": {
+      "sha": "f8390ade8e52",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/design-system/starter/components.json"
+    },
+    ".fwos/cli/modules/design-system/starter/design-system.json": {
+      "sha": "5baaa83d4e91",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/design-system/starter/design-system.json"
+    },
+    ".fwos/cli/modules/design-system/starter/rules.yaml": {
+      "sha": "264306b6235e",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/design-system/starter/rules.yaml"
+    },
+    ".fwos/cli/modules/design-system/starter/tokens/base.json": {
+      "sha": "b10bcbac967e",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/design-system/starter/tokens/base.json"
+    },
+    ".fwos/cli/modules/design-system/starter/tokens/dark.json": {
+      "sha": "b5ca49f63ac1",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/design-system/starter/tokens/dark.json"
+    },
+    ".fwos/cli/modules/design-system/starter/tokens/light.json": {
+      "sha": "ced0d65cd2d6",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/design-system/starter/tokens/light.json"
+    },
+    ".fwos/cli/modules/design-system/starter/voice.md": {
+      "sha": "f8f34e77de57",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/design-system/starter/voice.md"
+    },
+    ".fwos/cli/modules/screens/templates/web/.env.example": {
+      "sha": "ccbe5e5954d0",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/.env.example"
+    },
+    ".fwos/cli/modules/screens/templates/web/.github/workflows/fwos.yml": {
+      "sha": "78c292fc8504",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/.github/workflows/fwos.yml"
+    },
+    ".fwos/cli/modules/screens/templates/web/README.md": {
+      "sha": "6391f7327dc6",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/README.md"
+    },
+    ".fwos/cli/modules/screens/templates/web/_gitignore": {
+      "sha": "32268ba73fe7",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/_gitignore"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/app/(fwos-screens)/fwos-screens/[pageId]/page.tsx": {
+      "sha": "f555f6422f06",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/app/(fwos-screens)/fwos-screens/[pageId]/page.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/app/(fwos-screens)/fwos-screens/page.tsx": {
+      "sha": "c79bdd943b80",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/app/(fwos-screens)/fwos-screens/page.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/app/globals.css": {
+      "sha": "6daa58b0cd14",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/app/globals.css"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/app/layout.tsx": {
+      "sha": "180eb954e427",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/app/layout.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/app/page.tsx": {
+      "sha": "2d87adf5a647",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/app/page.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/e2e/defaults.spec.ts": {
+      "sha": "d0117d1362cc",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/e2e/defaults.spec.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/e2e/home.spec.ts": {
+      "sha": "72ae991d2f42",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/e2e/home.spec.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/next.config.ts": {
+      "sha": "9ad7a263d540",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/next.config.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/package.json": {
+      "sha": "da5605f2e43a",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/package.json"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/playwright.config.ts": {
+      "sha": "55ac97aa2736",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/playwright.config.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/postcss.config.mjs": {
+      "sha": "c532ba5e49cf",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/postcss.config.mjs"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/features/README.md": {
+      "sha": "5bf4ea7141cd",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/features/README.md"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/screens/index.ts": {
+      "sha": "8d284620a72f",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/screens/index.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/screens/registry.tsx": {
+      "sha": "e3a5554ffdfc",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/screens/registry.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/data/index.ts": {
+      "sha": "19be8b210b11",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/data/index.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/data/query-provider.tsx": {
+      "sha": "0712b8377f3b",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/data/query-provider.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/lib/cn.ts": {
+      "sha": "8f8a01cd607e",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/lib/cn.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/lib/format.ts": {
+      "sha": "507d9a4e5f8d",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/lib/format.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/lib/index.ts": {
+      "sha": "c956a680da7a",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/lib/index.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/nav/index.ts": {
+      "sha": "f38298421937",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/nav/index.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/nav/nav.tsx": {
+      "sha": "35ee31428d8c",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/nav/nav.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/ui/alert.tsx": {
+      "sha": "f56e380fe00d",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/ui/alert.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/ui/badge.tsx": {
+      "sha": "635db76ecac0",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/ui/badge.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/ui/button.tsx": {
+      "sha": "9fbdc26b3732",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/ui/button.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/ui/card.tsx": {
+      "sha": "f67df61be08c",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/ui/card.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/ui/empty-state.tsx": {
+      "sha": "845797a53f79",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/ui/empty-state.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/ui/index.ts": {
+      "sha": "6437200276b3",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/ui/index.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/ui/skeleton.tsx": {
+      "sha": "cb7f2161fdc3",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/ui/skeleton.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/ui/spinner.tsx": {
+      "sha": "cf07af43855b",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/ui/spinner.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/ui/state-handler.tsx": {
+      "sha": "dab68d591b11",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/ui/state-handler.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/ui/text-field.tsx": {
+      "sha": "894dbe6c7709",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/ui/text-field.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/ui/ui.test.tsx": {
+      "sha": "f0656c2590db",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/ui/ui.test.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/tsconfig.build.json": {
+      "sha": "2c32170076be",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/tsconfig.build.json"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/tsconfig.json": {
+      "sha": "a692e9d0892f",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/tsconfig.json"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/vitest.config.ts": {
+      "sha": "5af334946914",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/vitest.config.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/vitest.setup.ts": {
+      "sha": "d284ba2d4d8a",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/vitest.setup.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/docs/app/ia.json": {
+      "sha": "fa67d4b38421",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/docs/app/ia.json"
+    },
+    ".fwos/cli/modules/screens/templates/web/docs/app/modules.json": {
+      "sha": "cf52e8daf221",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/docs/app/modules.json"
+    },
+    ".fwos/cli/modules/screens/templates/web/package.json": {
+      "sha": "b5eec13735d6",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/package.json"
+    },
+    ".fwos/cli/modules/screens/templates/web/packages/api-contract/fixtures/.gitkeep": {
+      "sha": "e3b0c44298fc",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/packages/api-contract/fixtures/.gitkeep"
+    },
+    ".fwos/cli/modules/screens/templates/web/packages/api-contract/openapi.yaml": {
+      "sha": "f9ed63131784",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/packages/api-contract/openapi.yaml"
+    },
+    ".fwos/cli/modules/screens/templates/web/packages/api-contract/package.json": {
+      "sha": "ff44c06d73cc",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/packages/api-contract/package.json"
+    },
+    ".fwos/cli/modules/screens/templates/web/packages/tokens/package.json": {
+      "sha": "543585bf6835",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/packages/tokens/package.json"
+    },
+    ".fwos/cli/modules/screens/templates/web/pnpm-workspace.yaml": {
+      "sha": "08d75840c97a",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/pnpm-workspace.yaml"
+    },
+    "apps/web/e2e/fwos-states.spec.ts": {
+      "sha": "2f3aa6b5b292",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "fwos harness"
+    },
+    "apps/web/e2e/fwos-ia.spec.ts": {
+      "sha": "1bffdfff083f",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "fwos harness"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/app/(fwos-screens)/fwos-screens/components/[componentId]/page.tsx": {
+      "sha": "8ff881dec1ae",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/app/(fwos-screens)/fwos-screens/components/[componentId]/page.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/app/not-found.tsx": {
+      "sha": "996c2f0e7d1f",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/app/not-found.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/screens/components.tsx": {
+      "sha": "4a4bcf80afe9",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/screens/components.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/screens/home.tsx": {
+      "sha": "d74dcdb48e77",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/screens/home.tsx"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/access/access.ts": {
+      "sha": "97c37d36e451",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/access/access.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/access/index.ts": {
+      "sha": "e459910983fc",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/access/index.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/session/index.ts": {
+      "sha": "2c1e19fab701",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/session/index.ts"
+    },
+    ".fwos/cli/modules/screens/templates/web/apps/web/src/shared/session/session.ts": {
+      "sha": "c44f53d3176f",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin modules/screens/templates/web/apps/web/src/shared/session/session.ts"
+    },
+    ".fwos/cli/platforms/web/templates/harness/fwos-ia.spec.ts": {
+      "sha": "1bffdfff083f",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin platforms/web/templates/harness/fwos-ia.spec.ts"
+    },
+    ".fwos/cli/platforms/web/templates/harness/fwos-states.spec.ts": {
+      "sha": "2f3aa6b5b292",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "plugin platforms/web/templates/harness/fwos-states.spec.ts"
+    }
+  }
+}

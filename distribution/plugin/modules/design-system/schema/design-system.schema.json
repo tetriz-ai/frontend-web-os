@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:design-system",
+  "title": "design-system/design-system.json",
+  "description": "Points fwos at your tokens. The contract (slots) ships with fwos; the values are yours.",
+  "type": "object",
+  "required": ["schema", "name", "tokens"],
+  "properties": {
+    "schema": { "const": 1 },
+    "name": { "type": "string" },
+    "platforms": { "type": "array", "items": { "enum": ["web", "electron", "mac"] } },
+    "tokens": {
+      "type": "object",
+      "required": ["modes"],
+      "properties": {
+        "shared": { "type": "array", "items": { "type": "string" } },
+        "modes": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": { "type": "array", "items": { "type": "string" } }
+        }
+      },
+      "additionalProperties": false
+    },
+    "defaultMode": { "type": "string" },
+    "slots": {
+      "type": "object",
+      "description": "Slot id -> token path, when your token names differ from the defaults.",
+      "additionalProperties": { "type": "string" }
+    },
+    "assumed": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Defaults fwos took on your behalf, shown as [ASSUMED] until you confirm them."
+    },
+    "components": { "type": "string" },
+    "voice": { "type": "string" },
+    "source": {
+      "type": "object",
+      "description": "Where an imported design system came from. `file` is the copy the import kept, relative to this folder, which the mapping report reads; `from` is where the theme was.",
+      "required": ["format", "file"],
+      "properties": {
+        "format": { "enum": ["shadcn"] },
+        "file": { "type": "string" },
+        "from": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

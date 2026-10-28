@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm install --frozen-lockfile)",
+      "Bash(pnpm typecheck)",
+      "Bash(pnpm lint)",
+      "Bash(pnpm build)",
+      "Bash(pnpm test)",
+      "Bash(pnpm test:e2e)",
+      "Bash(pnpm repo-check)",
+      "Bash(pnpm fixtures)",
+      "Bash(pnpm fixtures --check)",
+      "Bash(scripts/run-examples.sh)",
+      "Bash(node plugin/dist/fwos.mjs check design-system/tokens --dir examples/catch-raw-design-values/project)",
+      "Bash(node plugin/dist/fwos.mjs check tests/traceability --dir examples/prove-every-requirement/project)",
+      "Bash(pnpm fixtures:vendor)"
+    ]
+  }
+}

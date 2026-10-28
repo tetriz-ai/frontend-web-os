@@ -1,0 +1,480 @@
+{
+  "schema": 1,
+  "id": "0001-initial",
+  "title": "Initial app",
+  "route": "initial",
+  "step": "accept",
+  "status": "open",
+  "createdAt": "2026-10-12",
+  "cursor": {
+    "pending": [
+      "AC-calc-19"
+    ],
+    "section": "signoff"
+  },
+  "approvals": {
+    "brief": {
+      "sha": "c8bf45c633a0",
+      "files": {
+        "docs/app/brief.md": "a279ee905c8d"
+      },
+      "by": "Demo user",
+      "at": "2026-10-12T13:17:04.317Z",
+      "via": "chat"
+    },
+    "research": {
+      "sha": "816599906a0d",
+      "files": {
+        "docs/app/research.md": "be6811d1cfc1"
+      },
+      "by": "Demo user",
+      "at": "2026-10-12T13:17:04.446Z",
+      "via": "chat"
+    },
+    "architecture": {
+      "sha": "3b157bc0a78c",
+      "files": {
+        "docs/app/modules.json": "d5c2906f7e3d"
+      },
+      "by": "Demo user",
+      "at": "2026-10-12T13:21:04.096Z",
+      "via": "chat"
+    },
+    "design-system": {
+      "sha": "20eb4b1f2b15",
+      "files": {
+        "design-system": "016345740852"
+      },
+      "by": "Demo user",
+      "at": "2026-10-12T13:37:16.785Z",
+      "via": "chat"
+    },
+    "screens": {
+      "sha": "1ab2c1310e09",
+      "files": {
+        "docs/app/ia.json": "4e01c58576df"
+      },
+      "by": "Demo user",
+      "at": "2026-10-12T13:37:16.865Z",
+      "via": "chat"
+    },
+    "spec": {
+      "sha": "47878b3debd0",
+      "files": {
+        "docs/app/spec.md": "31b0cef31624",
+        "docs/app/test-plan.md": "f4d61f8f5e04"
+      },
+      "by": "Repo maintainer",
+      "at": "2026-10-14T09:08:43.540Z",
+      "via": "pr"
+    }
+  },
+  "lockedTests": {
+    "apps/web/src/features/tip-calculator/tip-calculator.test.tsx": {
+      "sha": "9356638abf75",
+      "at": "2026-10-12T13:57:27.171Z",
+      "evidence": "red",
+      "slice": "S1"
+    },
+    "apps/web/e2e/calculator.spec.ts": {
+      "sha": "76097b639379",
+      "at": "2026-10-12T13:57:27.171Z",
+      "evidence": "red",
+      "slice": "S1"
+    },
+    "apps/web/src/shared/lib/parse.test.ts": {
+      "sha": "943fb84a9b0f",
+      "at": "2026-10-12T14:03:01.318Z",
+      "evidence": "red",
+      "slice": "S2"
+    },
+    "apps/web/src/shared/lib/money.test.ts": {
+      "sha": "071762b576d2",
+      "at": "2026-10-12T14:03:01.318Z",
+      "evidence": "red",
+      "slice": "S2"
+    },
+    "apps/web/src/features/tip-calculator/results.test.tsx": {
+      "sha": "a3995032af02",
+      "at": "2026-10-12T14:06:20.521Z",
+      "evidence": "red",
+      "slice": "S3"
+    },
+    "apps/web/e2e/results.spec.ts": {
+      "sha": "8cd381f7615b",
+      "at": "2026-10-12T14:06:20.521Z",
+      "evidence": "red",
+      "slice": "S3"
+    },
+    "apps/web/src/features/tip-calculator/errors.test.tsx": {
+      "sha": "0e3c8dce9fe6",
+      "at": "2026-10-12T14:09:18.650Z",
+      "evidence": "red",
+      "slice": "S4"
+    },
+    "apps/web/e2e/reset.spec.ts": {
+      "sha": "48b794a56f2b",
+      "at": "2026-10-12T14:09:18.650Z",
+      "evidence": "red",
+      "slice": "S4"
+    },
+    "apps/web/src/features/tip-calculator/announce.test.tsx": {
+      "sha": "8f7efc71fd81",
+      "at": "2026-10-12T14:40:40.769Z",
+      "evidence": "existing",
+      "slice": "S5"
+    },
+    "apps/web/e2e/a11y.spec.ts": {
+      "sha": "846e17abe7fa",
+      "at": "2026-10-12T14:15:41.475Z",
+      "evidence": "red",
+      "slice": "S5"
+    },
+    "apps/web/e2e/offline.spec.ts": {
+      "sha": "e26810131784",
+      "at": "2026-10-12T14:42:31.294Z",
+      "evidence": "red",
+      "slice": "S6"
+    },
+    "apps/web/e2e/acceptance.spec.ts": {
+      "sha": "4f048fcb5de2",
+      "at": "2026-10-12T14:54:31.999Z",
+      "evidence": "existing"
+    },
+    "apps/web/e2e/announce-timing.spec.ts": {
+      "sha": "9551351b9495",
+      "at": "2026-10-12T14:56:42.027Z",
+      "evidence": "existing"
+    }
+  },
+  "redRuns": [
+    {
+      "at": "2026-10-12T13:57:27.171Z",
+      "failing": [
+        "src/features/tip-calculator/tip-calculator.test.tsx",
+        "a first visit shows the opening values @AC-calc-1 @state:calculator:empty",
+        "every request stays on the same origin and a CSP meta tag is set @AC-calc-25",
+        "opening / directly shows the app name, one nav entry and the empty state @AC-calc-1 @state:calculator:empty"
+      ],
+      "slice": "S1"
+    },
+    {
+      "at": "2026-10-12T14:03:01.318Z",
+      "failing": [
+        "parseAmount > parses \"42,50\" to 4250 cents @AC-calc-9",
+        "parseAmount > parses \"$1,234.50\" to 123450 cents @AC-calc-9",
+        "parseAmount > parses \"1,234\" to 123400 cents @AC-calc-9",
+        "parseAmount > parses \" 42.5 \" to 4250 cents @AC-calc-9",
+        "parseAmount > parses \"1.234,50\" to 123450 cents @AC-calc-9",
+        "parseAmount > parses \"1,234,567\" to 123456700 cents @AC-calc-9",
+        "parseAmount > parses \"1.234.567\" to 123456700 cents @AC-calc-9",
+        "parseAmount > parses \"12,345.6\" to 1234560 cents @AC-calc-9",
+        "parseAmount > rejects \"1,2345\" @AC-calc-9",
+        "parseAmount > rejects \"1.234\" @AC-calc-9",
+        "parseAmount > rejects \"1,23,456\" @AC-calc-9",
+        "parseAmount > rejects \"1,234.567\" @AC-calc-9",
+        "parseAmount > rejects \"$\" @AC-calc-9",
+        "parseAmount > rejects \"\" @AC-calc-9",
+        "parseAmount > rejects \"   \" @AC-calc-9",
+        "parseAmount > rejects \"12..5\" @AC-calc-10",
+        "parseAmount > rejects \"abc\" @AC-calc-10",
+        "parseAmount > rejects \"-5\" @AC-calc-10",
+        "parseAmount > rejects \"4.505\" @AC-calc-10",
+        "parseAmount > rejects \"10000000\" @AC-calc-10",
+        "parseAmount > accepts \"0\" as 0 cents @AC-calc-10",
+        "parseAmount > accepts \"9999999.99\" as 999999999 cents @AC-calc-10",
+        "parsePercent > parses \"0\" to 0 basis points @AC-calc-13",
+        "parsePercent > parses \"100\" to 10000 basis points @AC-calc-13",
+        "parsePercent > parses \"12.5\" to 1250 basis points @AC-calc-13",
+        "parsePercent > parses \"12.55\" to 1255 basis points @AC-calc-13",
+        "parsePercent > rejects \"150\" @AC-calc-13",
+        "parsePercent > rejects \"-1\" @AC-calc-13",
+        "parsePercent > rejects \"abc\" @AC-calc-13",
+        "parsePercent > rejects \"12.345\" @AC-calc-13",
+        "parsePercent > rejects \"\" @AC-calc-13",
+        "parsePeople > parses \"1\" to 1 @AC-calc-16",
+        "parsePeople > parses \"3\" to 3 @AC-calc-16",
+        "parsePeople > parses \"50\" to 50 @AC-calc-16",
+        "parsePeople > rejects \"0\" @AC-calc-16",
+        "parsePeople > rejects \"51\" @AC-calc-16",
+        "parsePeople > rejects \"2.5\" @AC-calc-16",
+        "parsePeople > rejects \"abc\" @AC-calc-16",
+        "parsePeople > rejects \"\" @AC-calc-16",
+        "splitBill tip rounding > rounds 33.33 at 15% half up to a 500 cent tip @AC-calc-8",
+        "splitBill tip rounding > rounds half up: 0.10 at 5% (0.5 cent rounds up) @AC-calc-8",
+        "splitBill tip rounding > rounds half up: 0.30 at 5% (1.5 cents rounds up) @AC-calc-8",
+        "splitBill tip rounding > rounds half up: 0.09 at 5% (0.45 cent rounds down) @AC-calc-8",
+        "splitBill tip rounding > rounds half up: 0.01 at 50% (0.5 cent rounds up) @AC-calc-8",
+        "splitBill tip rounding > rounds half up: 0.03 at 50% (1.5 cents rounds up) @AC-calc-8",
+        "splitBill tip rounding > rounds half up: 0.01 at 0% @AC-calc-8",
+        "splitBill tip rounding > keeps 0.01 at 0% as a one cent total @AC-calc-8",
+        "splitBill table > table: 100 at 18% across 3 @AC-calc-6",
+        "splitBill table > table: 0.01 at 0% across 50 @AC-calc-24",
+        "splitBill table > table: 120 at 18% across 4 @AC-calc-6",
+        "splitBill table > table: 9999999.99 at 18% across 1 @AC-calc-23",
+        "splitBill table > splits 100 at 18% across 3 @AC-calc-6",
+        "splitBill table > splits 0.01 at 0% across 50 @AC-calc-24",
+        "splitBill table > splits 120 at 18% across 4 exactly @AC-calc-6",
+        "splitBill invariants > bill 1 bp 0 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 0 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 0 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 0 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 0 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1255 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1255 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1255 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1255 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1255 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1500 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1500 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1500 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1500 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1500 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1800 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1800 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1800 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1800 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 1800 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 10000 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 10000 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 10000 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 10000 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 1 bp 10000 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 0 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 0 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 0 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 0 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 0 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1255 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1255 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1255 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1255 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1255 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1500 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1500 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1500 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1500 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1500 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1800 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1800 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1800 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1800 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 1800 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 10000 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 10000 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 10000 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 10000 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 99 bp 10000 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 0 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 0 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 0 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 0 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 0 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1255 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1255 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1255 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1255 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1255 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1500 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1500 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1500 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1500 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1500 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1800 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1800 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1800 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1800 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 1800 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 10000 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 10000 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 10000 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 10000 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 3333 bp 10000 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 0 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 0 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 0 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 0 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 0 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1255 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1255 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1255 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1255 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1255 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1500 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1500 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1500 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1500 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1500 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1800 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1800 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1800 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1800 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 1800 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 10000 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 10000 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 10000 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 10000 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 10000 bp 10000 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 0 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 0 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 0 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 0 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 0 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1255 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1255 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1255 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1255 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1255 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1500 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1500 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1500 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1500 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1500 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1800 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1800 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1800 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1800 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 1800 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 10000 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 10000 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 10000 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 10000 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 12345 bp 10000 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 0 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 0 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 0 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 0 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 0 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1255 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1255 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1255 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1255 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1255 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1500 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1500 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1500 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1500 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1500 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1800 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1800 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1800 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1800 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 1800 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 10000 people 1 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 10000 people 2 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 10000 people 3 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 10000 people 7 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "splitBill invariants > bill 999999999 bp 10000 people 50 keeps the share invariants @AC-calc-6 @AC-calc-24",
+        "formatUsd > formats 0 cents as $0.00 @AC-calc-23",
+        "formatUsd > formats 1 cents as $0.01 @AC-calc-23",
+        "formatUsd > formats 3540 cents as $35.40 @AC-calc-23",
+        "formatUsd > formats 123450 cents as $1,234.50 @AC-calc-23",
+        "formatUsd > formats 1179999999 cents as $11,799,999.99 @AC-calc-23"
+      ],
+      "slice": "S2"
+    },
+    {
+      "at": "2026-10-12T14:06:20.521Z",
+      "failing": [
+        "live results > updates results live as I type and step @AC-calc-2 @state:calculator:ready",
+        "live results > applies a tapped quick pick @AC-calc-3 @state:calculator:ready",
+        "live results > custom tip unchecks picks and a pick clears the custom tip @AC-calc-4",
+        "live results > accepts a custom tip of 0 with no error @AC-calc-5 @state:calculator:ready",
+        "live results > rounds each share up and says so @AC-calc-6 @state:calculator:rounded",
+        "live results > shows no rounding note when shares divide evenly @AC-calc-7 @state:calculator:ready",
+        "live results > rounds the tip to the cent @AC-calc-8",
+        "live results > reads the valid bill formats @AC-calc-9",
+        "live results > shows zeros for a bill of 0 with no error @AC-calc-12 @state:calculator:ready",
+        "live results > stops the stepper at 1 and 50 @AC-calc-15 @state:calculator:people-bounds",
+        "live results > rounds a one-cent bill across 50 people up @AC-calc-24 @state:calculator:rounded @state:calculator:people-bounds",
+        "narrow viewport › a huge bill fits at 320px without sideways scroll @AC-calc-23 @state:calculator:ready",
+        "using the calculator makes no network request after load @AC-calc-27"
+      ],
+      "slice": "S3"
+    },
+    {
+      "at": "2026-10-12T14:09:18.650Z",
+      "failing": [
+        "bill errors > clears results at once and shows the bill message only on blur for \"12..5\" @AC-calc-10 @state:calculator:invalid-bill",
+        "bill errors > clears results at once and shows the bill message only on blur for \"abc\" @AC-calc-10 @state:calculator:invalid-bill",
+        "bill errors > clears results at once and shows the bill message only on blur for \"-5\" @AC-calc-10 @state:calculator:invalid-bill",
+        "bill errors > clears results at once and shows the bill message only on blur for \"4.505\" @AC-calc-10 @state:calculator:invalid-bill",
+        "bill errors > clears results at once and shows the bill message only on blur for \"10000000\" @AC-calc-10 @state:calculator:invalid-bill",
+        "bill errors > shows the bill error on blur for \"1,2345\" @AC-calc-10 @state:calculator:invalid-bill",
+        "bill errors > shows the bill error on blur for \"1.234\" @AC-calc-10 @state:calculator:invalid-bill",
+        "bill errors > clears the bill error when I fix the value @AC-calc-11 @state:calculator:rounded",
+        "bill errors > accepts the largest bill and people 1 and 50, and recovers from 0 people @AC-calc-10 @AC-calc-16 @state:calculator:ready @state:calculator:people-bounds",
+        "custom tip errors > marks custom tip \"150\" invalid on blur, unchecks picks and blanks results @AC-calc-13 @state:calculator:invalid-tip",
+        "custom tip errors > marks custom tip \"-1\" invalid on blur, unchecks picks and blanks results @AC-calc-13 @state:calculator:invalid-tip",
+        "custom tip errors > marks custom tip \"abc\" invalid on blur, unchecks picks and blanks results @AC-calc-13 @state:calculator:invalid-tip",
+        "custom tip errors > marks custom tip \"12.345\" invalid on blur, unchecks picks and blanks results @AC-calc-13 @state:calculator:invalid-tip",
+        "custom tip errors > asks for a tip when the custom tip is cleared, and a pick brings results back @AC-calc-14 @state:calculator:invalid-tip",
+        "people errors > flags \"0\" people on blur, blanks results and keeps what I typed @AC-calc-16 @state:calculator:people-bounds",
+        "people errors > flags \"51\" people on blur, blanks results and keeps what I typed @AC-calc-16 @state:calculator:people-bounds",
+        "people errors > flags \"2.5\" people on blur, blanks results and keeps what I typed @AC-calc-16 @state:calculator:people-bounds",
+        "people errors > flags \"abc\" people on blur, blanks results and keeps what I typed @AC-calc-16 @state:calculator:people-bounds",
+        "reset from an invalid state > clears every message and aria-invalid @AC-calc-17 @state:calculator:invalid-bill @state:calculator:invalid-tip @state:calculator:people-bounds",
+        "reset from an invalid state > clears the no-tip message too @AC-calc-17 @state:calculator:invalid-tip",
+        "Reset restores the opening values and focuses Bill amount @AC-calc-17 @state:calculator:empty"
+      ],
+      "slice": "S4"
+    },
+    {
+      "at": "2026-10-12T14:15:41.475Z",
+      "failing": [
+        "screen-reader announcement > announces the split only after typing settles for 500 ms @AC-calc-18 @state:calculator:ready",
+        "screen-reader announcement > adds \"rounded up\" when the share does not divide evenly @AC-calc-18 @state:calculator:ready",
+        "the status region updates once, after typing stops @AC-calc-18 @state:calculator:ready",
+        "320px viewport › tip picks, steppers and Reset are at least 44x44 and nothing scrolls sideways @AC-calc-22 @state:calculator:empty"
+      ],
+      "slice": "S5"
+    },
+    {
+      "at": "2026-10-12T14:42:31.294Z",
+      "failing": [
+        "the calculator loads and works offline after one visit @AC-calc-20",
+        "the page links a web manifest named Tip Splitter @AC-calc-21"
+      ],
+      "slice": "S6"
+    }
+  ],
+  "spend": {
+    "build": 14,
+    "accept": 6
+  },
+  "unlocks": [
+    {
+      "path": "apps/web/src/features/tip-calculator/announce.test.tsx",
+      "reason": "Fake timers with shouldAdvanceTime let real time leak into the clock in 20ms steps, so the exact 499/500ms boundary can't hold for any correct 500ms debounce; switch to pure fake timers plus a jest timer shim so RTL's async drain uses the fake clock",
+      "reviewer": "Demo user",
+      "at": "2026-10-12T14:40:10.656Z",
+      "relockedAt": "2026-10-12T14:40:40.769Z"
+    }
+  ],
+  "signoffs": [
+    {
+      "item": "GAP-1",
+      "by": "Demo user",
+      "at": "2026-10-12T14:56:42.128Z",
+      "note": "Accepted as a known gap for v1: no app icon; home-screen install uses the browser default icon"
+    },
+    {
+      "item": "GAP-2",
+      "by": "Demo user",
+      "at": "2026-10-12T14:56:42.199Z",
+      "note": "Accepted as a known gap for v1: offline proven in headless Chromium only; no real-device install or iOS run"
+    },
+    {
+      "item": "GAP-3",
+      "by": "Demo user",
+      "at": "2026-10-12T14:56:42.273Z",
+      "note": "Accepted as a known gap for v1: frame-ancestors, nosniff, Referrer-Policy and sw.js no-cache are set at the host and checked after deploy"
+    },
+    {
+      "item": "GAP-4",
+      "by": "Demo user",
+      "at": "2026-10-12T14:56:42.348Z",
+      "note": "Accepted as a known gap for v1: no TalkBack or desktop screen-reader walkthrough; automated a11y checks only"
+    }
+  ]
+}

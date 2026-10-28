@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "kind": "ia",
+  "target": "member",
+  "fwos": "0.1.0",
+  "harness": {
+    "file": "apps/web/e2e/fwos-ia.spec.ts",
+    "sha": "1bffdfff083f"
+  },
+  "revision": "0732431223a2",
+  "config": {
+    "server": "production build",
+    "browser": "chromium"
+  },
+  "at": "2026-10-07T00:00:00.000Z",
+  "observations": {
+    "role": "member",
+    "flags": [],
+    "applied": true,
+    "nav": [
+      "/",
+      "/settings"
+    ],
+    "visits": [
+      {
+        "page": "home",
+        "path": "/",
+        "status": 200,
+        "finalPath": "/",
+        "notFound": false
+      },
+      {
+        "page": "settings",
+        "path": "/settings",
+        "status": 200,
+        "finalPath": "/settings",
+        "notFound": false
+      },
+      {
+        "page": "members",
+        "path": "/members",
+        "status": 404,
+        "finalPath": "/members",
+        "notFound": true
+      }
+    ]
+  }
+}

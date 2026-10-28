@@ -1,0 +1,32 @@
+{
+  "night": {
+    "$type": "color",
+    "sky": { "$value": "#0a0f1c" },
+    "cloud": { "$value": "#121a2b" },
+    "fog": { "$value": "#0f1625" },
+    "mist": { "$value": "#1b2539" },
+    "star": { "$value": "#f4f1e8" },
+    "moon": { "$value": "#cfc8b8" },
+    "haze": { "$value": "#a9a293" },
+    "dim": { "$value": "#5c5a54" },
+    "void": { "$value": "#0a0f1c" },
+    "rim": { "$value": "#1f2a40" },
+    "edge": { "$value": "#33415c" }
+  },
+  "beacon": {
+    "$type": "color",
+    "lamp": { "$value": "#f2b134" },
+    "on-lamp": { "$value": "#1a1200" },
+    "lamp-hover": { "$value": "#f7c867" },
+    "buoy": { "$value": "#5ec8d8" },
+    "on-buoy": { "$value": "#04141a" }
+  },
+  "flare": {
+    "$type": "color",
+    "red": { "ground": { "$value": "#3b1419" }, "glow": { "$value": "#ff9f9f" } },
+    "amber": { "ground": { "$value": "#3a2508" }, "glow": { "$value": "#ffc070" } },
+    "yellow": { "ground": { "$value": "#2f2a0a" }, "glow": { "$value": "#f0dd73" } },
+    "blue": { "ground": { "$value": "#0e2638" }, "glow": { "$value": "#8fcbf2" } },
+    "green": { "ground": { "$value": "#0d2a1e" }, "glow": { "$value": "#86dbb0" } }
+  }
+}

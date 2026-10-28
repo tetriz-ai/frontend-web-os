@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "roles": [
+    "user"
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "title": "Home",
+      "route": "/",
+      "kind": "nav",
+      "states": [
+        "loading",
+        "error",
+        "ready"
+      ]
+    }
+  ]
+}

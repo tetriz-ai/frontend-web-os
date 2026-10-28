@@ -1,0 +1,16 @@
+id: no-storage-in-ui
+title: UI never touches storage directly
+rule: R48
+platforms: [web, electron]
+hardness: check
+files: ["**/shared/ui/**/*.{ts,tsx}", "**/app/**/*.{ts,tsx}", "**/components/**/*.{ts,tsx}"]
+exclude: ["**/*.test.*", "**/*.spec.*"]
+pattern: '\b(?:localStorage|sessionStorage|indexedDB)\b'
+message: Components and routes read data through a feature's repository, never from storage directly, so local and real backends stay swappable.
+fix: Move the storage call into the feature's data layer (features/<name>/data) behind the contract.
+knowledge: modules/rules/knowledge/architecture.md
+fixtures:
+  bad:
+    - "const raw = localStorage.getItem('items');"
+  good:
+    - "const items = await repository.list();"

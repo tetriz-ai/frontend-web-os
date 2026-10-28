@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<testsuites><testsuite name="fixture">
+  <testcase classname="fixture.test.tsx" name="saves a link @AC-list-1"/>
+</testsuite></testsuites>

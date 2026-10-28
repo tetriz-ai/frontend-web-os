@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<testsuites><testsuite name="fixture">
+  <testcase classname="app/members/members.test.tsx" name="lists members"/>
+</testsuite></testsuites>

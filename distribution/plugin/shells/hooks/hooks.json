@@ -1,0 +1,22 @@
+{
+  "description": "fwos hooks. Each exits silently unless the project has .fwos/state.json.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/dist/fwos.mjs\" hook session-start", "timeout": 15 }]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [{ "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/shells/hooks/entry.sh\" pre-tool-use", "timeout": 15 }]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|apply_patch",
+        "hooks": [{ "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/shells/hooks/entry.sh\" post-tool-use", "timeout": 15 }]
+      }
+    ]
+  }
+}

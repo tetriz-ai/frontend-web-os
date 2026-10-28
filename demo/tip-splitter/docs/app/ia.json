@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "roles": ["user"],
+  "flags": [],
+  "pages": [
+    {
+      "id": "calculator",
+      "title": "Split the bill",
+      "route": "/",
+      "kind": "nav",
+      "order": 1,
+      "states": ["empty", "ready", "rounded", "invalid-bill", "invalid-tip", "people-bounds"],
+      "deepLink": "/"
+    }
+  ]
+}

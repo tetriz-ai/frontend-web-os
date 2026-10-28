@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "components": [
+    {
+      "id": "button",
+      "status": "stable",
+      "requiredStates": [
+        "default",
+        "loading"
+      ]
+    }
+  ]
+}

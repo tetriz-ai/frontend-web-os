@@ -1,0 +1,16 @@
+id: no-dangerous-html
+title: No raw HTML injection
+rule: R-security
+platforms: [web, electron]
+hardness: check
+files: ["**/*.{tsx,jsx}"]
+exclude: []
+pattern: '\bdangerouslySetInnerHTML\b'
+message: Raw HTML from data is an XSS hole. Render text, or sanitise in one audited place.
+fix: Render the value as text, or route it through the app's single sanitiser with a decision row.
+knowledge: modules/rules/knowledge/architecture.md
+fixtures:
+  bad:
+    - "<div dangerouslySetInnerHTML={{ __html: note }} />"
+  good:
+    - "<div>{note}</div>"

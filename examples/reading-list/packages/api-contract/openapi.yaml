@@ -1,0 +1,145 @@
+# The API contract. In the first release the app runs in local mode: a repository over browser
+# storage implements these operations, so a real backend can replace it later without touching a
+# component. Fixtures live in fixtures/ as <operationId>.<variant>.json holding
+# { "status": ..., "body": ... }. `fwos contract mocks` turns them into a fail-closed mock fetch,
+# and `fwos check` validates every fixture against this file.
+openapi: 3.1.0
+info:
+  title: "Reading list API"
+  version: 0.1.0
+  description: Saved links for one person. No auth in the first release (one device, local mode).
+paths:
+  /items:
+    get:
+      operationId: listItems
+      summary: Every saved link, newest first.
+      responses:
+        "200":
+          description: The saved links, newest first (by savedAt).
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Item"
+        "503":
+          description: Storage is unavailable, so the list can't be read.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Problem"
+    post:
+      operationId: createItem
+      summary: Save a link.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/NewItem"
+      responses:
+        "201":
+          description: Saved. The title defaults to the link's hostname when none is given.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Item"
+        "400":
+          description: The URL isn't an http or https address.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Problem"
+  /items/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    patch:
+      operationId: updateItem
+      summary: Mark a link read or unread.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ItemPatch"
+      responses:
+        "200":
+          description: The updated link.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Item"
+        "404":
+          description: No link with that id.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Problem"
+    delete:
+      operationId: deleteItem
+      summary: Delete a link for good.
+      responses:
+        "204":
+          description: Deleted.
+        "404":
+          description: No link with that id.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Problem"
+components:
+  schemas:
+    Item:
+      type: object
+      required: [id, url, title, savedAt, read]
+      additionalProperties: false
+      properties:
+        id:
+          type: string
+          minLength: 1
+        url:
+          type: string
+          format: uri
+          pattern: "^https?://"
+          maxLength: 2048
+        title:
+          type: string
+          minLength: 1
+          maxLength: 300
+        savedAt:
+          type: string
+          format: date-time
+        read:
+          type: boolean
+    NewItem:
+      type: object
+      required: [url]
+      additionalProperties: false
+      properties:
+        url:
+          type: string
+          format: uri
+          pattern: "^https?://"
+          maxLength: 2048
+        title:
+          type: string
+          maxLength: 300
+          description: Optional. Blank means "use the hostname".
+    ItemPatch:
+      type: object
+      required: [read]
+      additionalProperties: false
+      properties:
+        read:
+          type: boolean
+    Problem:
+      type: object
+      required: [message]
+      properties:
+        message:
+          type: string
+          description: What happened and what to do next, in plain words.

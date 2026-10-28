@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "pluginVersion": "0.1.0",
+  "name": "Tidewatch site",
+  "mode": "new",
+  "platforms": ["web"],
+  "createdAt": "2026-10-23",
+  "paths": {
+    "apps": { "web": "." },
+    "ui": { "web": "components/ui" },
+    "source": ["app/**", "components/**", "lib/**"],
+    "tokensOut": "styles/generated",
+    "results": ["results/*.xml"]
+  }
+}

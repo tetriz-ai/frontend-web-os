@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "decisions": [
+    {
+      "item": "status.critical.text",
+      "decision": "intentional",
+      "reason": "approved contrast correction: the theme's red was 4.36:1 on its background",
+      "by": "Sample reviewer",
+      "at": "2026-10-28T06:31:17.992Z",
+      "seen": "e9c6c3019715"
+    }
+  ]
+}

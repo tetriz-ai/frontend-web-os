@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:rule",
+  "title": "A rule in the rule pack (modules/rules/pack/*.yaml) or a project rule (design-system/rules.yaml `custom`)",
+  "type": "object",
+  "required": ["id", "title", "hardness", "files", "pattern", "message", "fixtures"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "title": { "type": "string" },
+    "rule": { "type": "string", "description": "The design rule this enforces (R-number or group)." },
+    "platforms": { "type": "array", "items": { "enum": ["web", "electron", "mac"] } },
+    "hardness": { "enum": ["check", "review", "guidance"] },
+    "files": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "exclude": { "type": "array", "items": { "type": "string" } },
+    "pattern": { "type": "string", "minLength": 1 },
+    "flags": { "type": "string", "pattern": "^[imsu]*$" },
+    "message": { "type": "string" },
+    "fix": { "type": "string" },
+    "knowledge": { "type": "string" },
+    "fixtures": {
+      "type": "object",
+      "required": ["bad", "good"],
+      "properties": {
+        "bad": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "good": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

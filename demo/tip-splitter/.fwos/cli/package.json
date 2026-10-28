@@ -1,0 +1,13 @@
+{
+  "name": "fwos-check",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The fwos CLI, vendored by fwos scaffold. Run fwos vendor to refresh it.",
+  "license": "MIT",
+  "bin": {
+    "fwos": "dist/fwos.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

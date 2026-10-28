@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "slice": "S1",
+  "change": "0001-initial",
+  "title": "Save",
+  "platform": "web",
+  "modules": [
+    "list"
+  ],
+  "components": [
+    "button"
+  ],
+  "acs": [
+    "AC-list-1"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "modules": [
+    { "name": "routes", "path": "app", "kind": "app", "dependsOn": ["*"], "description": "The pages." },
+    { "name": "chrome", "path": "components/chrome", "kind": "shell", "dependsOn": ["ui"], "description": "The site header and footer." },
+    { "name": "ui", "path": "components/ui", "kind": "shared", "dependsOn": [], "description": "The registered components." },
+    { "name": "content", "path": "lib", "kind": "shared", "dependsOn": [], "entry": ["content.ts"], "description": "Posts, releases and docs, sanitised once." }
+  ]
+}

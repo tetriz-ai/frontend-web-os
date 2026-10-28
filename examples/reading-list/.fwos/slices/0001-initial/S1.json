@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "slice": "S1",
+  "change": "0001-initial",
+  "title": "Save and list",
+  "platform": "web",
+  "modules": ["reading-list", "app", "screens"],
+  "screens": ["list"],
+  "components": ["alert", "button", "card", "empty-state", "skeleton", "state-handler", "text-field"],
+  "states": ["list:loading", "list:empty", "list:error", "list:ready"],
+  "acs": ["AC-reading-1", "AC-reading-2", "AC-reading-3", "AC-reading-4", "AC-reading-9", "AC-reading-10"],
+  "dependsOn": [],
+  "status": "done"
+}

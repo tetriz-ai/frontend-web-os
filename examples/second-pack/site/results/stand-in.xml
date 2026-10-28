@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A stand-in for a test run: every tagged test in this example, marked passed. Nothing ran them.
+     fwos reads it as JUnit, as it would a real run, and trusts each tag (see the README). -->
+<testsuites>
+  <testsuite name="stand-in" tests="18">
+    <testcase classname="components/ui/hero-banner.test.tsx" name="@state:hero-banner:plain shows the headline and one call to action"/>
+    <testcase classname="components/ui/hero-banner.test.tsx" name="@state:hero-banner:with-video plays a muted film behind it, hidden from screen readers"/>
+    <testcase classname="components/ui/logo-wall.test.tsx" name="@state:logo-wall:static wraps the logos in rows"/>
+    <testcase classname="components/ui/logo-wall.test.tsx" name="@state:logo-wall:scrolling scrolls sideways"/>
+    <testcase classname="components/ui/pricing-table.test.tsx" name="@state:pricing-table:monthly shows monthly prices first"/>
+    <testcase classname="components/ui/pricing-table.test.tsx" name="@state:pricing-table:yearly shows yearly prices once chosen"/>
+    <testcase classname="components/ui/pricing-table.test.tsx" name="@state:pricing-table:loading-quote keeps the button disabled while the request is sent"/>
+    <testcase classname="e2e/pages.spec.ts" name="@state:home:ready leads with the outcome and one call to action"/>
+    <testcase classname="e2e/pages.spec.ts" name="@state:pricing:ready shows the plans"/>
+    <testcase classname="e2e/pages.spec.ts" name="@state:pricing:quote-sent confirms the request"/>
+    <testcase classname="e2e/pages.spec.ts" name="@state:docs:ready renders a docs page"/>
+    <testcase classname="e2e/pages.spec.ts" name="@state:docs:missing-page points to the docs start"/>
+    <testcase classname="e2e/pages.spec.ts" name="@state:changelog:ready lists releases, newest first"/>
+    <testcase classname="e2e/pages.spec.ts" name="@state:changelog:no-releases says there are none yet"/>
+    <testcase classname="e2e/pages.spec.ts" name="@state:blog:ready lists the posts"/>
+    <testcase classname="e2e/pages.spec.ts" name="@state:blog:no-posts says there are none yet"/>
+    <testcase classname="e2e/pages.spec.ts" name="@state:post:ready shows the post"/>
+    <testcase classname="e2e/pages.spec.ts" name="@state:legal:ready shows the document asked for"/>
+  </testsuite>
+</testsuites>

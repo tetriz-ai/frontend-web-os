@@ -1,0 +1,171 @@
+{
+  "palette": {
+    "$type": "color",
+    "sand": {
+      "0": {
+        "$value": "#fffdf9"
+      },
+      "50": {
+        "$value": "#fbf6ee"
+      },
+      "100": {
+        "$value": "#f3eadb"
+      },
+      "200": {
+        "$value": "#e6d6bd"
+      },
+      "300": {
+        "$value": "#cdb592"
+      },
+      "600": {
+        "$value": "#6b5841"
+      },
+      "700": {
+        "$value": "#54432f"
+      },
+      "800": {
+        "$value": "#3a2e20"
+      },
+      "900": {
+        "$value": "#241c13"
+      },
+      "950": {
+        "$value": "#16110b"
+      }
+    },
+    "ember": {
+      "300": {
+        "$value": "#f5a87a"
+      },
+      "400": {
+        "$value": "#ef8a52"
+      },
+      "600": {
+        "$value": "#b9461a"
+      },
+      "700": {
+        "$value": "#9a3a15"
+      },
+      "800": {
+        "$value": "#6e2a10"
+      },
+      "100": {
+        "$value": "#fde8db"
+      },
+      "900": {
+        "$value": "#3d1709"
+      }
+    },
+    "moss": {
+      "100": {
+        "$value": "#e6f2e1"
+      },
+      "800": {
+        "$value": "#2f5a24"
+      },
+      "300": {
+        "$value": "#9fd08e"
+      },
+      "950": {
+        "$value": "#13230e"
+      }
+    },
+    "brick": {
+      "100": {
+        "$value": "#fbe4e1"
+      },
+      "800": {
+        "$value": "#922b21"
+      },
+      "300": {
+        "$value": "#f4a59c"
+      },
+      "950": {
+        "$value": "#3a0f0b"
+      }
+    },
+    "amber": {
+      "100": {
+        "$value": "#fdf0d5"
+      },
+      "800": {
+        "$value": "#8a4b06"
+      },
+      "300": {
+        "$value": "#f7c66b"
+      },
+      "950": {
+        "$value": "#341c02"
+      }
+    },
+    "sky": {
+      "100": {
+        "$value": "#e1eefb"
+      },
+      "800": {
+        "$value": "#1d4f8c"
+      },
+      "300": {
+        "$value": "#93c0f0"
+      },
+      "950": {
+        "$value": "#0b1f38"
+      }
+    },
+    "plum": {
+      "100": {
+        "$value": "#f3e6f6"
+      },
+      "800": {
+        "$value": "#6b2a7a"
+      },
+      "300": {
+        "$value": "#d6a7e0"
+      },
+      "950": {
+        "$value": "#2a0f30"
+      }
+    }
+  },
+  "shape": {
+    "$type": "dimension",
+    "corner": {
+      "small": {
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        }
+      },
+      "medium": {
+        "$value": {
+          "value": 4,
+          "unit": "px"
+        }
+      },
+      "large": {
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        }
+      }
+    }
+  },
+  "typeface": {
+    "$type": "fontFamily",
+    "body": {
+      "$value": [
+        "Iowan Old Style",
+        "Charter",
+        "Georgia",
+        "serif"
+      ]
+    },
+    "code": {
+      "$value": [
+        "ui-monospace",
+        "Menlo",
+        "monospace"
+      ]
+    }
+  }
+}

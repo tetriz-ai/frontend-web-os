@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "components": [
+    {
+      "id": "berth-grid",
+      "status": "stable",
+      "source": "local",
+      "requiredStates": ["idle", "sorted", "unbooked", "stale"],
+      "description": "Berths as rows: vessel, arrival, draught. Sorts by arrival; marks itself stale when the feed lags."
+    },
+    {
+      "id": "tide-chart",
+      "status": "stable",
+      "source": "local",
+      "requiredStates": ["idle", "busy", "offline"],
+      "description": "The next 24 hours of tide height as a line, in the chart slots."
+    },
+    {
+      "id": "vessel-chip",
+      "status": "stable",
+      "source": "local",
+      "requiredStates": ["idle", "selected"],
+      "description": "A vessel's name and IMO number; selecting it opens its voyage."
+    },
+    {
+      "id": "command-palette",
+      "status": "beta",
+      "source": "local",
+      "requiredStates": ["closed", "open", "no-results"],
+      "description": "Jump to a berth, vessel or voyage by typing."
+    },
+    {
+      "id": "legacy-berth-table",
+      "status": "superseded",
+      "supersededBy": "berth-grid",
+      "source": "local",
+      "requiredStates": [],
+      "description": "The first berth list. berth-grid replaced it, and nothing may import it now."
+    }
+  ]
+}

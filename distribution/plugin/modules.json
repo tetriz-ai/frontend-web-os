@@ -1,0 +1,200 @@
+{
+  "schema": 1,
+  "modules": [
+    {
+      "name": "kernel",
+      "path": "kernel",
+      "kind": "kernel",
+      "entry": [
+        "index.ts",
+        "testing.ts"
+      ],
+      "dependsOn": [],
+      "description": "Shared types and utilities: the check, adapter and hook contracts. No step logic."
+    },
+    {
+      "name": "state",
+      "path": "modules/state",
+      "kind": "step",
+      "dependsOn": [
+        "kernel"
+      ],
+      "description": "Change files, approvals as hashes, staleness, the lock, baseline, file ownership."
+    },
+    {
+      "name": "discovery",
+      "path": "modules/discovery",
+      "kind": "step",
+      "dependsOn": [
+        "kernel"
+      ],
+      "description": "The interview and the brief."
+    },
+    {
+      "name": "research",
+      "path": "modules/research",
+      "kind": "step",
+      "dependsOn": [
+        "kernel",
+        "discovery"
+      ],
+      "description": "The researcher agent, feature checklists, registry checks."
+    },
+    {
+      "name": "architecture",
+      "path": "modules/architecture",
+      "kind": "step",
+      "dependsOn": [
+        "kernel",
+        "discovery"
+      ],
+      "description": "Stack defaults, modules.json, the walls check, the API contract."
+    },
+    {
+      "name": "design-system",
+      "path": "modules/design-system",
+      "kind": "step",
+      "dependsOn": [
+        "kernel",
+        "state"
+      ],
+      "description": "The slot contract, DTCG intake, token build, registry, design checks."
+    },
+    {
+      "name": "rules",
+      "path": "modules/rules",
+      "kind": "step",
+      "dependsOn": [
+        "kernel"
+      ],
+      "description": "The rule pack, the edit-time check, lenses, knowledge, learnings."
+    },
+    {
+      "name": "screens",
+      "path": "modules/screens",
+      "kind": "step",
+      "dependsOn": [
+        "kernel",
+        "state",
+        "architecture",
+        "design-system",
+        "rules"
+      ],
+      "description": "The scaffold, ia.json, the IA diff, screens checks."
+    },
+    {
+      "name": "spec",
+      "path": "modules/spec",
+      "kind": "step",
+      "dependsOn": [
+        "kernel",
+        "state",
+        "discovery",
+        "architecture",
+        "design-system",
+        "screens"
+      ],
+      "description": "The spec sections, the AC format, a change's own criteria, the spec reviewer."
+    },
+    {
+      "name": "tests",
+      "path": "modules/tests",
+      "kind": "step",
+      "dependsOn": [
+        "kernel",
+        "state",
+        "spec",
+        "rules"
+      ],
+      "description": "The test planner and writer, test plan, traceability, locked tests."
+    },
+    {
+      "name": "build",
+      "path": "modules/build",
+      "kind": "step",
+      "dependsOn": [
+        "kernel",
+        "state",
+        "tests",
+        "spec",
+        "architecture",
+        "design-system",
+        "screens",
+        "rules"
+      ],
+      "description": "The builder agent, slice manifests, drift."
+    },
+    {
+      "name": "accept",
+      "path": "modules/accept",
+      "kind": "step",
+      "dependsOn": [
+        "kernel",
+        "state",
+        "tests",
+        "spec",
+        "build",
+        "design-system",
+        "rules"
+      ],
+      "description": "The adjudicator, QA explorer and the acceptance report."
+    },
+    {
+      "name": "platforms/web",
+      "path": "platforms/web",
+      "kind": "platform",
+      "dependsOn": [
+        "kernel"
+      ],
+      "description": "Next.js adapters, web profile, security and licence checks."
+    },
+    {
+      "name": "platforms/electron",
+      "path": "platforms/electron",
+      "kind": "platform",
+      "dependsOn": [
+        "kernel"
+      ],
+      "description": "Not built in this release."
+    },
+    {
+      "name": "platforms/mac",
+      "path": "platforms/mac",
+      "kind": "platform",
+      "dependsOn": [
+        "kernel"
+      ],
+      "description": "Not built in this release."
+    },
+    {
+      "name": "shells/flow",
+      "path": "shells/flow",
+      "kind": "shell",
+      "dependsOn": [
+        "*"
+      ],
+      "description": "Next-step logic, change routing and the user-facing skills."
+    },
+    {
+      "name": "shells/cli",
+      "path": "shells/cli",
+      "kind": "shell",
+      "dependsOn": [
+        "*"
+      ],
+      "description": "The fwos CLI: check, doctor, report and every command.",
+      "entry": [
+        "main.ts"
+      ]
+    },
+    {
+      "name": "shells/hooks",
+      "path": "shells/hooks",
+      "kind": "shell",
+      "dependsOn": [
+        "*"
+      ],
+      "description": "hooks.json and the one dispatcher."
+    }
+  ]
+}

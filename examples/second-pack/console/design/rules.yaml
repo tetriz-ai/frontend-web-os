@@ -1,0 +1,22 @@
+# Tidewatch console: its overrides of fwos's rule pack, and its own rule.
+schema: 1
+rules:
+  # Tide heights, draughts and times are formatted in one place, the readings module.
+  no-raw-intl:
+    exclude: ["apps/console/src/lib/readings/**"]
+custom:
+  - id: no-direct-fetch
+    title: Features call the port API through its client
+    rule: R-data
+    hardness: check
+    files: ["apps/console/src/features/**/*.{ts,tsx}"]
+    exclude: ["**/*.test.*"]
+    pattern: '\bfetch\('
+    message: Call the port API through apps/console/src/lib/api, so tests answer every request from the contract's fixtures.
+    fix: Import the call you need from '@/lib/api'.
+    fixtures:
+      bad:
+        - "const res = await fetch('/api/berths');"
+      good:
+        - "const berths = await listBerths();"
+ignore: []

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "modules": [
+    { "name": "app", "path": "apps/web/app", "kind": "app", "dependsOn": ["*"], "description": "Next.js routes: thin, they wire features to URLs. Also the manifest and service worker registration." },
+    { "name": "screens", "path": "apps/web/src/screens", "kind": "app", "dependsOn": ["*"], "description": "Dev-only screens on fake data, in every state." },
+    { "name": "tip-calculator", "path": "apps/web/src/features/tip-calculator", "kind": "feature", "dependsOn": ["shared-ui", "shared-lib"], "description": "The one screen: bill, tip %, people stepper, live results, rounding note, reset, pre-tax hint, screen-reader announcement." },
+    { "name": "shared-ui", "path": "apps/web/src/shared/ui", "kind": "shared", "dependsOn": ["shared-lib"], "description": "Registered components, styled only through design-system slots." },
+    { "name": "shared-lib", "path": "apps/web/src/shared/lib", "kind": "shared", "dependsOn": [], "description": "Pure helpers, no React: money math in integer cents, the '.'/',' amount parser, the USD formatter, class names." },
+    { "name": "shared-nav", "path": "apps/web/src/shared/nav", "kind": "shared", "dependsOn": [], "description": "Scaffold default. The nav, read from docs/app/ia.json. Unused by features in v1 (one screen)." },
+    { "name": "shared-data", "path": "apps/web/src/shared/data", "kind": "shared", "dependsOn": [], "description": "Scaffold default. The data-fetching provider. Unused in v1 (no data layer, D-8)." },
+    { "name": "api-contract", "path": "packages/api-contract", "kind": "shared", "dependsOn": [], "entry": ["generated/mock-fetch.ts"], "description": "Scaffold default. Empty in v1 (no backend, D-8)." }
+  ]
+}

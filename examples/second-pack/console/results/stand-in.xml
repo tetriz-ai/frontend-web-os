@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A stand-in for a test run: every tagged test in this example, marked passed. Nothing ran them.
+     fwos reads it as JUnit, as it would a real run, and trusts each tag (see the README). -->
+<testsuites>
+  <testsuite name="stand-in" tests="35">
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:overview:loading holds the tide chart while readings load"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:overview:ready shows the port overview"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:overview:degraded says which feed is behind"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:berths:loading keeps the heading while berths load"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:berths:ready lists the berths booked today"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:berths:no-berths says none are booked"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:berths:stale marks the rows out of date"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:berth:loading keeps the page while the berth loads"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:berth:ready shows the berth and its draught"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:berth:not-found answers 404 for an unknown berth"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:voyage:loading keeps the page while the voyage loads"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:voyage:ready names the vessel and when it is due"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:voyage:delayed says how late it is"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:forecast:loading keeps the heading while the forecast loads"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:forecast:ready shows the forecast heading"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:forecast:offline says the gauge is offline"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:auctions:loading keeps the heading while auctions load"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:auctions:ready shows the auctions page to the harbourmaster"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:auctions:closed says no auction is open"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:audit:loading keeps the heading while the trail loads"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:audit:ready shows the range in the heading"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:audit:forbidden answers 404 to a pilot"/>
+    <testcase classname="apps/console/e2e/pages.spec.ts" name="@state:settings:ready shows the section asked for"/>
+    <testcase classname="apps/console/src/components/ui/berth-grid.test.tsx" name="@state:berth-grid:idle lists each berth with its vessel"/>
+    <testcase classname="apps/console/src/components/ui/berth-grid.test.tsx" name="@state:berth-grid:sorted puts the earliest arrival first"/>
+    <testcase classname="apps/console/src/components/ui/berth-grid.test.tsx" name="@state:berth-grid:unbooked says no berths are booked"/>
+    <testcase classname="apps/console/src/components/ui/berth-grid.test.tsx" name="@state:berth-grid:stale says the feed paused and keeps the rows"/>
+    <testcase classname="apps/console/src/components/ui/command-palette/command-palette.test.tsx" name="@state:command-palette:closed renders nothing"/>
+    <testcase classname="apps/console/src/components/ui/command-palette/command-palette.test.tsx" name="@state:command-palette:open lists every target"/>
+    <testcase classname="apps/console/src/components/ui/command-palette/command-palette.test.tsx" name="@state:command-palette:no-results says what to try"/>
+    <testcase classname="apps/console/src/components/ui/tide-chart.test.tsx" name="@state:tide-chart:idle draws the tide as a line"/>
+    <testcase classname="apps/console/src/components/ui/tide-chart.test.tsx" name="@state:tide-chart:busy holds the space while readings load"/>
+    <testcase classname="apps/console/src/components/ui/tide-chart.test.tsx" name="@state:tide-chart:offline shows no readings when the gauge is down"/>
+    <testcase classname="apps/console/src/components/ui/vessel-chip.test.tsx" name="@state:vessel-chip:idle names the vessel, then its IMO number"/>
+    <testcase classname="apps/console/src/components/ui/vessel-chip.test.tsx" name="@state:vessel-chip:selected is pressed"/>
+  </testsuite>
+</testsuites>

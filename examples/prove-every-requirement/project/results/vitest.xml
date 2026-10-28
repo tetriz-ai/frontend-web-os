@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="vitest" tests="2" failures="1">
+  <testsuite name="src/features/list/list.test.tsx" tests="2" failures="1">
+    <testcase classname="src/features/list/list.test.tsx" name="saving a link puts it first @AC-list-1" time="0.04"/>
+    <testcase classname="src/features/list/list.test.tsx" name="marking a link read moves it to the Read tab @AC-list-2" time="0.05">
+      <failure message="expected the link under Read, found it under Unread" type="AssertionError"/>
+    </testcase>
+  </testsuite>
+</testsuites>

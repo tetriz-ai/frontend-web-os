@@ -1,0 +1,18 @@
+id: img-needs-alt
+title: Images say what they show
+rule: R45
+platforms: [web, electron]
+hardness: check
+files: ["**/*.{tsx,jsx}"]
+exclude: []
+pattern: '<(?:img|Image)\b(?![^>]*\balt=)[^>]*>'
+message: Every image needs alt text (alt="" for decoration), or screen readers read the file name.
+fix: Add alt="<what it shows>", or alt="" if it's decorative.
+knowledge: modules/rules/knowledge/accessibility.md
+fixtures:
+  bad:
+    - "<img src={item.favicon} />"
+    - "<Image src={logo} width={24} height={24} />"
+  good:
+    - "<img src={item.favicon} alt=\"\" />"
+    - "<Image src={logo} alt=\"Acme\" width={24} height={24} />"

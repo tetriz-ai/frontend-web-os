@@ -1,0 +1,5 @@
+{
+  "name": "@tidewatch/port-api",
+  "private": true,
+  "description": "The port API's contract and the fixtures tests answer requests from."
+}

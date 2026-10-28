@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "modules": [
+    { "name": "app", "path": "apps/web/app", "kind": "app", "dependsOn": ["*"], "description": "Next.js routes: thin, they wire features to URLs." },
+    { "name": "screens", "path": "apps/web/src/screens", "kind": "app", "dependsOn": ["*"], "description": "Dev-only screens on fake data, in every state." },
+    { "name": "shared-ui", "path": "apps/web/src/shared/ui", "kind": "shared", "dependsOn": ["shared-lib"], "description": "Registered components, styled only through design-system slots." },
+    { "name": "shared-lib", "path": "apps/web/src/shared/lib", "kind": "shared", "dependsOn": [], "description": "Small helpers: class names, the one date and number formatter." },
+    { "name": "shared-nav", "path": "apps/web/src/shared/nav", "kind": "shared", "dependsOn": ["shared-access"], "description": "The nav, read from docs/app/ia.json, showing each page to the roles and flags ia.json gives it." },
+    { "name": "shared-access", "path": "apps/web/src/shared/access", "kind": "shared", "dependsOn": [], "description": "Who may see a page, by ia.json's roles and flags: one rule for the nav and the page guard." },
+    { "name": "shared-session", "path": "apps/web/src/shared/session", "kind": "shared", "dependsOn": ["shared-access"], "description": "Who is asking (server only), and guardPage, which every page calls with its ia.json ID." },
+    { "name": "shared-data", "path": "apps/web/src/shared/data", "kind": "shared", "dependsOn": [], "description": "The data-fetching provider." },
+    { "name": "api-contract", "path": "packages/api-contract", "kind": "shared", "dependsOn": [], "entry": ["generated/mock-fetch.ts"], "description": "The contract and its fail-closed mock fetch." }
+  ]
+}

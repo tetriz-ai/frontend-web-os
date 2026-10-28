@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "slice": "S2",
+  "change": "0001-initial",
+  "title": "Read state and the filter",
+  "platform": "web",
+  "modules": ["reading-list", "app", "screens"],
+  "screens": ["list"],
+  "components": ["badge", "button", "empty-state"],
+  "states": ["list:filtered-empty", "list:ready"],
+  "acs": ["AC-reading-5", "AC-reading-6", "AC-reading-7"],
+  "dependsOn": ["S1"],
+  "status": "done"
+}

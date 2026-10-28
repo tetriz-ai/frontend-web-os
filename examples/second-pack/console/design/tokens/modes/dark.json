@@ -1,0 +1,120 @@
+{
+  "ui": {
+    "$type": "color",
+    "bg": {
+      "page": {
+        "$value": "{foam.950}"
+      },
+      "card": {
+        "$value": "{foam.900}"
+      },
+      "well": {
+        "$value": "#121b21"
+      },
+      "press": {
+        "$value": "{foam.800}"
+      }
+    },
+    "ink": {
+      "main": {
+        "$value": "{deep.50}"
+      },
+      "quiet": {
+        "$value": "#c9d3da"
+      },
+      "faint": {
+        "$value": "#a3b1ba"
+      },
+      "off": {
+        "$value": "#5b6a73"
+      },
+      "reverse": {
+        "$value": "{foam.950}"
+      }
+    },
+    "edge": {
+      "thin": {
+        "$value": "{foam.800}"
+      },
+      "thick": {
+        "$value": "{foam.700}"
+      }
+    },
+    "action": {
+      "main": {
+        "$value": "{deep.300}"
+      },
+      "on-main": {
+        "$value": "{deep.950}"
+      },
+      "main-hover": {
+        "$value": "{deep.200}"
+      },
+      "alt": {
+        "$value": "#6cc4a4"
+      },
+      "on-alt": {
+        "$value": "{deep.950}"
+      }
+    },
+    "alert": {
+      "danger": {
+        "fill": {
+          "$value": "#3a1416"
+        },
+        "ink": {
+          "$value": "#ffb4ab"
+        }
+      },
+      "warn": {
+        "fill": {
+          "$value": "#3a2410"
+        },
+        "ink": {
+          "$value": "#ffc58a"
+        }
+      },
+      "notice": {
+        "fill": {
+          "$value": "#332c0c"
+        },
+        "ink": {
+          "$value": "#f2d66b"
+        }
+      },
+      "note": {
+        "fill": {
+          "$value": "#10263d"
+        },
+        "ink": {
+          "$value": "#a9cdf5"
+        }
+      },
+      "ok": {
+        "fill": {
+          "$value": "#10301f"
+        },
+        "ink": {
+          "$value": "#8fd9ae"
+        }
+      }
+    },
+    "plot": {
+      "tide": {
+        "$value": "{deep.400}"
+      },
+      "swell": {
+        "$value": "#e9a25a"
+      },
+      "wind": {
+        "$value": "#5cc196"
+      },
+      "draft": {
+        "$value": "#c98bd0"
+      },
+      "rest": {
+        "$value": "{foam.200}"
+      }
+    }
+  }
+}

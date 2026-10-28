@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<testsuites><testsuite name="fixture">
+  <testcase classname="fixture.test.tsx" name="skeleton @state:home:loading"/>
+  <testcase classname="fixture.test.tsx" name="retry @state:home:error"/>
+  <testcase classname="fixture.test.tsx" name="list @state:home:ready"/>
+</testsuite></testsuites>

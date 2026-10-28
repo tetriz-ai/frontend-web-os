@@ -1,0 +1,1580 @@
+{
+  "schema": 1,
+  "gallery": "0bbfbcfe4bae",
+  "browser": "Chromium 156.0.8078.4",
+  "cells": [
+    {
+      "component": "button",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "variant=secondary",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "variant=ghost",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "variant=danger",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes opacity",
+          "adopted": "changes opacity"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "state=loading",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "skips it",
+          "adopted": "skips it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "state=disabled",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "skips it",
+          "adopted": "skips it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "text-field",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "type",
+          "original": "takes text",
+          "adopted": "takes text"
+        }
+      ]
+    },
+    {
+      "component": "text-field",
+      "cell": "state=invalid",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "type",
+          "original": "takes text",
+          "adopted": "takes text"
+        }
+      ]
+    },
+    {
+      "component": "text-field",
+      "cell": "state=disabled",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "skips it",
+          "adopted": "skips it"
+        },
+        {
+          "interaction": "type",
+          "original": "refuses text",
+          "adopted": "refuses text"
+        }
+      ]
+    },
+    {
+      "component": "card",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=brand",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=critical",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=warning",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=caution",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=info",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=success",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=critical",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=warning",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=caution",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=success",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "skeleton",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "spinner",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "empty-state",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "empty-state",
+      "cell": "kind=filtered",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "state-handler",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "state-handler",
+      "cell": "status=error",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "state-handler",
+      "cell": "status=empty",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "state-handler",
+      "cell": "status=ready",
+      "mode": "light",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "variant=secondary",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "no change",
+          "adopted": "no change"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "variant=ghost",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "variant=danger",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes opacity",
+          "adopted": "changes opacity"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "state=loading",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "skips it",
+          "adopted": "skips it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "state=disabled",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "skips it",
+          "adopted": "skips it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "text-field",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "type",
+          "original": "takes text",
+          "adopted": "takes text"
+        }
+      ]
+    },
+    {
+      "component": "text-field",
+      "cell": "state=invalid",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "type",
+          "original": "takes text",
+          "adopted": "takes text"
+        }
+      ]
+    },
+    {
+      "component": "text-field",
+      "cell": "state=disabled",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "skips it",
+          "adopted": "skips it"
+        },
+        {
+          "interaction": "type",
+          "original": "refuses text",
+          "adopted": "refuses text"
+        }
+      ]
+    },
+    {
+      "component": "card",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=brand",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=critical",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=warning",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=caution",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=info",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=success",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=critical",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=warning",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=caution",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=success",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "skeleton",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "spinner",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "empty-state",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "empty-state",
+      "cell": "kind=filtered",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "state-handler",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "state-handler",
+      "cell": "status=error",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "state-handler",
+      "cell": "status=empty",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "state-handler",
+      "cell": "status=ready",
+      "mode": "dark",
+      "viewport": "phone",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "variant=secondary",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "variant=ghost",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "variant=danger",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes opacity",
+          "adopted": "changes opacity"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "state=loading",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "skips it",
+          "adopted": "skips it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "state=disabled",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "skips it",
+          "adopted": "skips it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "text-field",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "type",
+          "original": "takes text",
+          "adopted": "takes text"
+        }
+      ]
+    },
+    {
+      "component": "text-field",
+      "cell": "state=invalid",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "type",
+          "original": "takes text",
+          "adopted": "takes text"
+        }
+      ]
+    },
+    {
+      "component": "text-field",
+      "cell": "state=disabled",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "skips it",
+          "adopted": "skips it"
+        },
+        {
+          "interaction": "type",
+          "original": "refuses text",
+          "adopted": "refuses text"
+        }
+      ]
+    },
+    {
+      "component": "card",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=brand",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=critical",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=warning",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=caution",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=info",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=success",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=critical",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=warning",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=caution",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=success",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "skeleton",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "spinner",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "empty-state",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "empty-state",
+      "cell": "kind=filtered",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "state-handler",
+      "cell": "default",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "state-handler",
+      "cell": "status=error",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "state-handler",
+      "cell": "status=empty",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "state-handler",
+      "cell": "status=ready",
+      "mode": "light",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "variant=secondary",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "no change",
+          "adopted": "no change"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "variant=ghost",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "variant=danger",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes opacity",
+          "adopted": "changes opacity"
+        },
+        {
+          "interaction": "press",
+          "original": "fires",
+          "adopted": "fires"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "state=loading",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "skips it",
+          "adopted": "skips it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "button",
+      "cell": "state=disabled",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "skips it",
+          "adopted": "skips it"
+        },
+        {
+          "interaction": "hover",
+          "original": "changes background-color",
+          "adopted": "changes background-color"
+        },
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "text-field",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "type",
+          "original": "takes text",
+          "adopted": "takes text"
+        }
+      ]
+    },
+    {
+      "component": "text-field",
+      "cell": "state=invalid",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "reaches it",
+          "adopted": "reaches it"
+        },
+        {
+          "interaction": "type",
+          "original": "takes text",
+          "adopted": "takes text"
+        }
+      ]
+    },
+    {
+      "component": "text-field",
+      "cell": "state=disabled",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "focus",
+          "original": "skips it",
+          "adopted": "skips it"
+        },
+        {
+          "interaction": "type",
+          "original": "refuses text",
+          "adopted": "refuses text"
+        }
+      ]
+    },
+    {
+      "component": "card",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=brand",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=critical",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=warning",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=caution",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=info",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "badge",
+      "cell": "tone=success",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=critical",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=warning",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=caution",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "alert",
+      "cell": "tone=success",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "skeleton",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "spinner",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "empty-state",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "empty-state",
+      "cell": "kind=filtered",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": []
+    },
+    {
+      "component": "state-handler",
+      "cell": "default",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "state-handler",
+      "cell": "status=error",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "state-handler",
+      "cell": "status=empty",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    },
+    {
+      "component": "state-handler",
+      "cell": "status=ready",
+      "mode": "dark",
+      "viewport": "desktop",
+      "differences": [],
+      "behaviour": [
+        {
+          "interaction": "press",
+          "original": "does nothing",
+          "adopted": "does nothing"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

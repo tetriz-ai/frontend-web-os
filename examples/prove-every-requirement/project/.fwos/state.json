@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "pluginVersion": "0.1.0",
+  "mode": "new",
+  "platforms": [
+    "web"
+  ],
+  "createdAt": "2026-10-07",
+  "name": "Reading list",
+  "paths": {
+    "results": [
+      "results/*.xml"
+    ]
+  }
+}

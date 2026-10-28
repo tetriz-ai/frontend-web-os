@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "0001-initial",
+  "title": "Initial app",
+  "route": "initial",
+  "step": "build",
+  "status": "open",
+  "createdAt": "2026-10-07",
+  "cursor": {
+    "pending": []
+  },
+  "approvals": {
+    "brief": {
+      "sha": "1905c81a92ad",
+      "files": {
+        "docs/app/brief.md": "1a2036951819"
+      },
+      "by": "Ada",
+      "at": "2026-10-07T00:00:00.000Z",
+      "via": "chat"
+    },
+    "spec": {
+      "sha": "96c6e358987f",
+      "files": {
+        "docs/app/spec.md": "603c828a0338",
+        "docs/app/test-plan.md": "c3964bb3b70a"
+      },
+      "by": "Ada",
+      "at": "2026-10-07T00:00:00.000Z",
+      "via": "chat"
+    }
+  }
+}

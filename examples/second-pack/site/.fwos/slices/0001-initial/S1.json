@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "slice": "S1",
+  "change": "0001-initial",
+  "title": "Pricing: monthly and yearly plans, and the quote request",
+  "platform": "web",
+  "modules": ["routes", "ui"],
+  "screens": ["pricing"],
+  "components": ["pricing-table"],
+  "states": ["pricing:quote-sent"],
+  "acs": [],
+  "status": "done"
+}

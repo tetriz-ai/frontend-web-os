@@ -1,0 +1,4 @@
+@import "tailwindcss";
+/* Generated from design/ by `fwos tokens build`: slot variables, then a theme that exposes only the slots. */
+@import "../../../../packages/theme/generated/tokens.css";
+@import "../../../../packages/theme/generated/theme.css";

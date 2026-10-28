@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "files": {
+    "packages/theme/generated/tokens.css": {
+      "sha": "9e67e7a755ce",
+      "kind": "generated",
+      "pluginVersion": "0.1.0",
+      "source": "design/"
+    },
+    "packages/theme/generated/theme.css": {
+      "sha": "6e612dd8adf9",
+      "kind": "generated",
+      "pluginVersion": "0.1.0",
+      "source": "design/"
+    },
+    "packages/port-api/generated/mock-fetch.ts": {
+      "sha": "f1ddce779ead",
+      "kind": "generated",
+      "pluginVersion": "0.1.0",
+      "source": "packages/port-api/openapi.yaml + packages/port-api/fixtures/"
+    }
+  }
+}

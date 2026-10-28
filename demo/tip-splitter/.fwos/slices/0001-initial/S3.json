@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "slice": "S3",
+  "change": "0001-initial",
+  "title": "Live results: bill, tip picks, custom tip, stepper, rounding note, pre-tax hint",
+  "platform": "web",
+  "modules": ["tip-calculator"],
+  "screens": ["calculator"],
+  "components": ["text-field", "segmented-control", "number-stepper", "button", "card"],
+  "states": ["calculator:ready", "calculator:rounded", "calculator:people-bounds"],
+  "acs": ["AC-calc-2", "AC-calc-3", "AC-calc-4", "AC-calc-5", "AC-calc-6", "AC-calc-7", "AC-calc-8", "AC-calc-9", "AC-calc-12", "AC-calc-15", "AC-calc-23", "AC-calc-24", "AC-calc-26", "AC-calc-27"],
+  "dependsOn": ["S1", "S2"],
+  "status": "done"
+}

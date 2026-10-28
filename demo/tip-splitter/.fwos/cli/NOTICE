@@ -1,0 +1,78 @@
+Copyright 2026 Workloom Solutions Private Limited
+Frontend Web OS
+
+The Frontend Web OS repository includes the following third-party material. Paths are relative
+to the root of that repository.
+
+- CODE_OF_CONDUCT.md is adapted from the Contributor Covenant, version 2.1,
+  https://www.contributor-covenant.org/version/2/1/code_of_conduct.html,
+  licensed under the Creative Commons Attribution 4.0 International License
+  (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/.
+- The theme values in examples/import-a-shadcn-theme/globals.css and in the shadcn intake test
+  in plugin/modules/design-system/tests/design-system.test.ts, and the buttonVariants and Input
+  fixture snippets in plugin/platforms/web/tests/gallery.test.ts come from shadcn/ui,
+  https://github.com/shadcn-ui/ui, under the MIT License below.
+- The JWT/session signer and UI search/invite patch fixtures in
+  scripts/tests/adopt-unrelated-app.test.ts adapt portions of nextjs/saas-starter,
+  https://github.com/nextjs/saas-starter, MIT. Its copyright and license text are in
+  third_party/saas-starter/LICENSE.
+- The OKLab conversion in plugin/modules/design-system/color.ts follows Björn Ottosson's reference
+  code, https://bottosson.github.io/posts/oklab/, which is public domain or, where that doesn't
+  hold, under the MIT License below.
+
+The bundled CLI is plugin/dist/fwos.mjs in the Frontend Web OS repository and in the packed CLI archive distributed through GitHub Releases, and .fwos/cli/dist/fwos.mjs in each app fwos scaffolds, such as demo/tip-splitter/
+in the repository. It compiles in the following, each with its license text in
+THIRD-PARTY-LICENSES.txt next to the bundle:
+
+- @babel/parser 8.0.8, MIT, https://github.com/babel/babel
+- ajv 8.20.0, MIT, https://github.com/ajv-validator/ajv
+- fast-deep-equal 3.1.3, MIT, https://github.com/epoberezkin/fast-deep-equal
+- fast-uri 3.1.9, BSD-3-Clause, https://github.com/fastify/fast-uri
+- json-schema-traverse 1.0.0, MIT, https://github.com/epoberezkin/json-schema-traverse
+- yaml 2.9.1, ISC, https://github.com/eemeli/yaml
+
+------------------------------------------------------------------------------
+shadcn/ui
+------------------------------------------------------------------------------
+MIT License
+
+Copyright (c) 2023 shadcn
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+------------------------------------------------------------------------------
+OKLab reference code
+------------------------------------------------------------------------------
+Copyright (c) 2020 Björn Ottosson
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

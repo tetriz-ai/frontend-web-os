@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:provenance",
+  "title": ".fwos/provenance.json",
+  "description": "A ledger of what fwos wrote into files that are yours. Never regenerated; an upgrade never touches those files.",
+  "type": "object",
+  "required": ["schema", "entries"],
+  "properties": {
+    "schema": { "const": 1 },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "at", "pluginVersion", "by"],
+        "properties": {
+          "path": { "type": "string" },
+          "at": { "type": "string" },
+          "pluginVersion": { "type": "string" },
+          "by": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

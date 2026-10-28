@@ -1,0 +1,15 @@
+{
+  "shape": {
+    "$type": "dimension",
+    "round": {
+      "tight": { "$value": "2px" },
+      "mid": { "$value": "5px" },
+      "loose": { "$value": "12px" }
+    }
+  },
+  "face": {
+    "body": { "$type": "fontFamily", "$value": ["IBM Plex Sans", "Helvetica Neue", "Arial", "sans-serif"] },
+    "code": { "$type": "fontFamily", "$value": ["IBM Plex Mono", "Menlo", "monospace"] },
+    "reading": { "$type": "typography", "$value": { "fontSize": "1.75rem", "fontWeight": 600, "lineHeight": "2rem", "letterSpacing": "-0.01em" } }
+  }
+}

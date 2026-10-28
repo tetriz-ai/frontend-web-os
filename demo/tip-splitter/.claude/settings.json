@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*fwos.mjs*)",
+      "Bash(pnpm typecheck)",
+      "Bash(pnpm test)",
+      "Bash(pnpm e2e)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "components": [
+    {
+      "id": "button",
+      "status": "stable",
+      "requiredStates": []
+    },
+    {
+      "id": "old-button",
+      "status": "superseded",
+      "supersededBy": "button",
+      "requiredStates": []
+    }
+  ]
+}

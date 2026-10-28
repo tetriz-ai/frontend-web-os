@@ -1,0 +1,105 @@
+{
+  "color": {
+    "$type": "color",
+    "canvas": {
+      "default": {
+        "$value": "{palette.sand.0}"
+      },
+      "raised": {
+        "$value": "{palette.sand.0}"
+      },
+      "sunken": {
+        "$value": "{palette.sand.50}"
+      },
+      "pressable": {
+        "$value": "{palette.sand.100}"
+      }
+    },
+    "ink": {
+      "strong": {
+        "$value": "{palette.sand.950}"
+      },
+      "soft": {
+        "$value": "{palette.sand.800}"
+      },
+      "faint": {
+        "$value": "{palette.sand.700}"
+      },
+      "off": {
+        "$value": "{palette.sand.300}"
+      },
+      "reverse": {
+        "$value": "{palette.sand.0}"
+      }
+    },
+    "line": {
+      "light": {
+        "$value": "{palette.sand.100}"
+      },
+      "regular": {
+        "$value": "{palette.sand.200}"
+      }
+    },
+    "action": {
+      "main": {
+        "$value": "{palette.ember.700}"
+      },
+      "main-ink": {
+        "$value": "{palette.sand.0}"
+      },
+      "main-hover": {
+        "$value": "{palette.ember.800}"
+      }
+    },
+    "highlight": {
+      "main": {
+        "$value": "{palette.ember.100}"
+      },
+      "ink": {
+        "$value": "{palette.ember.900}"
+      }
+    },
+    "signal": {
+      "danger": {
+        "surface": {
+          "$value": "{palette.brick.100}"
+        },
+        "ink": {
+          "$value": "{palette.brick.800}"
+        }
+      },
+      "warn": {
+        "surface": {
+          "$value": "{palette.amber.100}"
+        },
+        "ink": {
+          "$value": "{palette.amber.800}"
+        }
+      },
+      "notice": {
+        "surface": {
+          "$value": "{palette.plum.100}"
+        },
+        "ink": {
+          "$value": "{palette.plum.800}"
+        }
+      },
+      "note": {
+        "surface": {
+          "$value": "{palette.sky.100}"
+        },
+        "ink": {
+          "$value": "{palette.sky.800}"
+        }
+      },
+      "ok": {
+        "surface": {
+          "$value": "{palette.moss.100}"
+        },
+        "ink": {
+          "$value": "{palette.moss.800}"
+        }
+      }
+    }
+  }
+}

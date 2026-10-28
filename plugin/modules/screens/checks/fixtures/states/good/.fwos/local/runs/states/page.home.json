@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "kind": "states",
+  "target": "page.home",
+  "fwos": "0.1.0",
+  "harness": {
+    "file": "apps/web/e2e/fwos-states.spec.ts",
+    "sha": "2f3aa6b5b292"
+  },
+  "revision": "9192862d5bea",
+  "config": {
+    "server": "production build",
+    "browser": "chromium"
+  },
+  "at": "2026-10-07T00:00:00.000Z",
+  "observations": [
+    {
+      "state": "loading",
+      "status": 200,
+      "found": true,
+      "nodes": 3,
+      "text": "loading view",
+      "busy": 1,
+      "alerts": [],
+      "statuses": [],
+      "items": [],
+      "disabled": 0,
+      "invalid": 0
+    },
+    {
+      "state": "error",
+      "status": 200,
+      "found": true,
+      "nodes": 3,
+      "text": "error view",
+      "busy": 0,
+      "alerts": [
+        "Couldn't load the list Try again"
+      ],
+      "statuses": [],
+      "items": [],
+      "disabled": 0,
+      "invalid": 0
+    },
+    {
+      "state": "ready",
+      "status": 200,
+      "found": true,
+      "nodes": 3,
+      "text": "ready view",
+      "busy": 0,
+      "alerts": [],
+      "statuses": [],
+      "items": [
+        "Dune example.com",
+        "Neuromancer example.org"
+      ],
+      "disabled": 0,
+      "invalid": 0
+    }
+  ]
+}

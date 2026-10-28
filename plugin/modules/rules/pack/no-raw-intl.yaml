@@ -1,0 +1,18 @@
+id: no-raw-intl
+title: Dates and numbers go through the shared formatter
+rule: R-locale
+platforms: [web, electron]
+hardness: check
+files: ["**/*.{ts,tsx,js,jsx}"]
+exclude: ["**/lib/format*", "**/format/**", "**/*.test.*", "**/*.spec.*"]
+pattern: '\.toLocale(?:Date|Time)?String\(|new\s+Intl\.(?:DateTimeFormat|NumberFormat|RelativeTimeFormat)\('
+message: Format dates and numbers with the app's shared formatter, so every screen follows the locale slot (C15).
+fix: Import formatDate / formatNumber from the shared format module.
+knowledge: modules/rules/knowledge/copy-and-locale.md
+fixtures:
+  bad:
+    - "const label = item.savedAt.toLocaleDateString();"
+    - "const n = new Intl.NumberFormat('en').format(total);"
+  good:
+    - "const label = formatDate(item.savedAt);"
+    - "// toLocaleDateString() is banned, use formatDate"

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "modules": [
+    { "name": "routes", "path": "apps/console/src/app", "kind": "app", "dependsOn": ["*"], "description": "The App Router pages: they compose features and the shell." },
+    { "name": "shell", "path": "apps/console/src/components/shell", "kind": "shell", "dependsOn": ["ui"], "description": "The harbour nav and page frame." },
+    { "name": "ui", "path": "apps/console/src/components/ui", "kind": "shared", "dependsOn": [], "description": "The registered components." },
+    { "name": "berths", "path": "apps/console/src/features/berths", "kind": "feature", "dependsOn": ["ui", "port-api", "readings"], "description": "Berth board and berth detail." },
+    { "name": "audit", "path": "apps/console/src/features/audit", "kind": "feature", "dependsOn": ["ui", "readings"], "description": "The audit trail. It may not reach into berths." },
+    { "name": "port-api", "path": "apps/console/src/lib/api", "kind": "shared", "dependsOn": [], "entry": ["client.ts"], "description": "The port API client, the one place that calls fetch." },
+    { "name": "readings", "path": "apps/console/src/lib/readings", "kind": "shared", "dependsOn": [], "description": "Formats tide heights, draughts and port times." }
+  ]
+}

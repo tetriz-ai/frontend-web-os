@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:baseline",
+  "title": ".fwos/baseline.json",
+  "description": "Findings that existed before fwos arrived (adopt mode). Checks fail only on new or worse findings. It can only shrink.",
+  "type": "object",
+  "required": ["schema", "createdAt", "findings"],
+  "properties": {
+    "schema": { "const": 1 },
+    "createdAt": { "type": "string" },
+    "checks": {
+      "type": "object",
+      "description": "The checks the baseline covers and the date each was first recorded. A covered check can only shrink; a check that wasn't on when it was recorded can be taken in once. A file without it covers every check.",
+      "additionalProperties": { "type": "string" }
+    },
+    "findings": {
+      "type": "object",
+      "description": "Per check, each finding's fingerprint and how many findings had it. A file from before counts were kept holds a list of fingerprints (digits read as N); fwos still reads it, and `fwos baseline` rewrites it with counts.",
+      "additionalProperties": {
+        "oneOf": [
+          { "type": "object", "additionalProperties": { "type": "integer", "minimum": 1 } },
+          { "type": "array", "items": { "type": "string" } }
+        ]
+      }
+    }
+  },
+  "additionalProperties": false
+}

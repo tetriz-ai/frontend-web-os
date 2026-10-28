@@ -1,0 +1,18 @@
+id: no-pie-chart
+title: No pie or donut charts
+rule: R-charts
+platforms: [web, electron]
+hardness: check
+files: ["**/*.{ts,tsx,js,jsx}"]
+exclude: []
+pattern: 'import\s*\{[^}]*\b(?:PieChart|Pie|RadialBarChart|DonutChart)\b[^}]*\}\s*from|\btype\s*:\s*[''"](?:pie|doughnut|donut)[''"]'
+message: Pie and donut charts make people compare angles, which they read badly. Use a sorted bar chart.
+fix: Swap to a horizontal bar chart sorted by value, with "other" last.
+knowledge: modules/rules/knowledge/charts.md
+fixtures:
+  bad:
+    - "import { PieChart, Pie } from 'recharts';"
+    - "new Chart(ctx, { type: 'doughnut', data });"
+  good:
+    - "import { BarChart, Bar } from 'recharts';"
+    - "const pieces = slices.map(toBar);"

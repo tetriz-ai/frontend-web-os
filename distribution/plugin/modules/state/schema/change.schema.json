@@ -1,0 +1,466 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:change",
+  "title": ".fwos/changes/<id>.json",
+  "description": "One change: the first creates the app, later ones add to it. Holds the step, approvals (as content hashes), skips, locked tests and sign-offs.",
+  "type": "object",
+  "required": [
+    "schema",
+    "id",
+    "title",
+    "route",
+    "step",
+    "status",
+    "createdAt",
+    "approvals"
+  ],
+  "$defs": {
+    "who": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approval": {
+      "type": "object",
+      "required": [
+        "sha",
+        "files",
+        "by",
+        "at",
+        "via"
+      ],
+      "properties": {
+        "sha": {
+          "type": "string"
+        },
+        "files": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "by": {
+          "$ref": "#/$defs/who"
+        },
+        "at": {
+          "type": "string"
+        },
+        "via": {
+          "enum": [
+            "chat",
+            "pr",
+            "autopilot"
+          ]
+        },
+        "ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Where the person said yes, when it wasn't in chat: the pull request review or comment."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "route": {
+      "enum": [
+        "initial",
+        "code-only",
+        "touches-ac",
+        "new-feature",
+        "data-change",
+        "design-system",
+        "add-platform",
+        "architecture"
+      ]
+    },
+    "step": {
+      "enum": [
+        "discovery",
+        "research",
+        "architecture",
+        "design-system",
+        "screens",
+        "spec",
+        "build",
+        "accept",
+        "done"
+      ]
+    },
+    "status": {
+      "enum": [
+        "open",
+        "done"
+      ]
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "branch": {
+      "type": "string"
+    },
+    "head": {
+      "type": "string"
+    },
+    "links": {
+      "description": "What the change came from and builds on, in place: an issue or doc URL, or a file in the project with its hash when it was linked. Context, not an approval. With a stage, the team's own artifact for that stage of the change (`fwos change link --stage`).",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ref"
+        ],
+        "properties": {
+          "ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha": {
+            "type": "string"
+          },
+          "stage": {
+            "enum": [
+              "idea",
+              "design",
+              "spec",
+              "test-plan",
+              "build",
+              "acceptance"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "base": {
+      "description": "An adopted app's change: the spec's acceptance criteria when the change began, each with a hash of its text, so the change's own criteria (added or changed) stand apart from those it carries.",
+      "type": "object",
+      "required": [
+        "acs"
+      ],
+      "properties": {
+        "acs": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "map": {
+      "description": "An adopted app's change: what it touches, read from the code by `fwos change map`.",
+      "type": "object",
+      "required": [
+        "targets",
+        "wrappers",
+        "files",
+        "components",
+        "data",
+        "tests",
+        "owners",
+        "at"
+      ],
+      "properties": {
+        "targets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "target",
+              "file"
+            ],
+            "properties": {
+              "target": {
+                "type": "string"
+              },
+              "file": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "wrappers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "kind",
+              "what",
+              "file"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "api",
+                  "action"
+                ]
+              },
+              "what": {
+                "type": "string"
+              },
+              "file": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "tests": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "file",
+              "via"
+            ],
+            "properties": {
+              "file": {
+                "type": "string"
+              },
+              "via": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "owners": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "at": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "cursor": {
+      "type": "object",
+      "properties": {
+        "section": {
+          "type": "string"
+        },
+        "pending": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "approvals": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/approval"
+      }
+    },
+    "skips": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "target",
+          "reason",
+          "by",
+          "at"
+        ],
+        "properties": {
+          "target": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "by": {
+            "$ref": "#/$defs/who"
+          },
+          "at": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "target",
+          "finding",
+          "by",
+          "at"
+        ],
+        "properties": {
+          "target": {
+            "type": "string"
+          },
+          "finding": {
+            "type": "string"
+          },
+          "by": {
+            "$ref": "#/$defs/who"
+          },
+          "at": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "lockedTests": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "sha",
+          "at"
+        ],
+        "properties": {
+          "sha": {
+            "type": "string"
+          },
+          "at": {
+            "type": "string"
+          },
+          "slice": {
+            "type": "string"
+          },
+          "evidence": {
+            "enum": [
+              "red",
+              "existing"
+            ],
+            "description": "red: its new tests failed before the code existed. existing: characterisation of behaviour that already worked."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "unlocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "reason",
+          "reviewer",
+          "at"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reviewer": {
+            "$ref": "#/$defs/who"
+          },
+          "at": {
+            "type": "string"
+          },
+          "relockedAt": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "redRuns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "at",
+          "failing"
+        ],
+        "properties": {
+          "slice": {
+            "type": "string"
+          },
+          "at": {
+            "type": "string"
+          },
+          "failing": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "signoffs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "item",
+          "by",
+          "at"
+        ],
+        "properties": {
+          "item": {
+            "type": "string"
+          },
+          "by": {
+            "$ref": "#/$defs/who"
+          },
+          "at": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "spend": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number"
+      }
+    }
+  },
+  "additionalProperties": false
+}

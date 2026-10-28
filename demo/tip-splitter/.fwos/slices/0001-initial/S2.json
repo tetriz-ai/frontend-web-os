@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "slice": "S2",
+  "change": "0001-initial",
+  "title": "Money math and parsing in whole cents",
+  "platform": "web",
+  "modules": ["shared-lib"],
+  "screens": [],
+  "components": [],
+  "states": [],
+  "acs": [],
+  "dependsOn": [],
+  "status": "done"
+}

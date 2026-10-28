@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "slice": "S1",
+  "change": "0001-initial",
+  "title": "Static export, CSP meta, no data layer, calculator opening state",
+  "platform": "web",
+  "modules": ["app", "shared-data", "tip-calculator"],
+  "screens": ["calculator"],
+  "components": ["text-field", "segmented-control", "number-stepper", "button", "card"],
+  "states": ["calculator:empty"],
+  "acs": ["AC-calc-1", "AC-calc-25"],
+  "dependsOn": [],
+  "status": "done"
+}

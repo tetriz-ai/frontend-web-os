@@ -1,0 +1,72 @@
+openapi: 3.1.0
+info:
+  title: Port API
+  version: '1.0'
+paths:
+  /berths:
+    get:
+      operationId: listBerths
+      responses:
+        '200':
+          description: Today's berths, and whether the berth feed is behind.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/BerthList' }
+        '503':
+          description: The berth feed is down.
+  /vessels/{imo}/voyages/{voyageId}:
+    get:
+      operationId: getVoyage
+      parameters:
+        - { name: imo, in: path, required: true, schema: { type: string } }
+        - { name: voyageId, in: path, required: true, schema: { type: string } }
+      responses:
+        '200':
+          description: The voyage.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Voyage' }
+        '404':
+          description: No such voyage.
+  /session:
+    get:
+      operationId: getSession
+      responses:
+        '200':
+          description: Who is signed in, and the flags on for them.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Session' }
+components:
+  schemas:
+    BerthList:
+      type: object
+      required: [berths, stale]
+      properties:
+        berths: { type: array, items: { $ref: '#/components/schemas/Berth' } }
+        stale: { type: boolean }
+    Berth:
+      type: object
+      required: [id, name, maxDraught]
+      properties:
+        id: { type: string }
+        name: { type: string }
+        maxDraught: { type: number }
+        arrival: { type: string }
+        vessel:
+          type: object
+          required: [name, imo, voyageId]
+          properties: { name: { type: string }, imo: { type: string }, voyageId: { type: string } }
+    Voyage:
+      type: object
+      required: [vesselName, eta, delayedMinutes]
+      properties:
+        vesselName: { type: string }
+        eta: { type: string }
+        delayedMinutes: { type: integer }
+    Session:
+      type: object
+      required: [role, flags]
+      properties:
+        role: { enum: [harbormaster, pilot, auditor] }
+        flags: { type: array, items: { type: string } }

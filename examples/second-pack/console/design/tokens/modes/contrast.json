@@ -1,0 +1,43 @@
+{
+  "ui": {
+    "$type": "color",
+    "bg": {
+      "page": { "$value": "#ffffff" },
+      "card": { "$value": "#ffffff" },
+      "well": { "$value": "#f2f2f2" },
+      "press": { "$value": "#e0e0e0" }
+    },
+    "ink": {
+      "main": { "$value": "#000000" },
+      "quiet": { "$value": "#1a1a1a" },
+      "faint": { "$value": "#2b2b2b" },
+      "off": { "$value": "#6e6e6e" },
+      "reverse": { "$value": "#ffffff" }
+    },
+    "edge": {
+      "thin": { "$value": "#4d4d4d" },
+      "thick": { "$value": "#000000" }
+    },
+    "action": {
+      "main": { "$value": "#00306b" },
+      "on-main": { "$value": "#ffffff" },
+      "main-hover": { "$value": "#001f47" },
+      "alt": { "$value": "#004d33" },
+      "on-alt": { "$value": "#ffffff" }
+    },
+    "alert": {
+      "danger": { "fill": { "$value": "#ffffff" }, "ink": { "$value": "#8b0000" } },
+      "warn": { "fill": { "$value": "#ffffff" }, "ink": { "$value": "#6b3000" } },
+      "notice": { "fill": { "$value": "#ffffff" }, "ink": { "$value": "#4d3d00" } },
+      "note": { "fill": { "$value": "#ffffff" }, "ink": { "$value": "#003d80" } },
+      "ok": { "fill": { "$value": "#ffffff" }, "ink": { "$value": "#00502a" } }
+    },
+    "plot": {
+      "tide": { "$value": "#1f5fbf" },
+      "swell": { "$value": "#b35900" },
+      "wind": { "$value": "#008055" },
+      "draft": { "$value": "#8a2be2" },
+      "rest": { "$value": "#595959" }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "components": [
+    {
+      "id": "hero-banner",
+      "status": "stable",
+      "source": "local",
+      "requiredStates": ["plain", "with-video"],
+      "description": "The headline and the one call to action, over a still or a muted harbour film."
+    },
+    {
+      "id": "pricing-table",
+      "status": "stable",
+      "source": "local",
+      "requiredStates": ["monthly", "yearly", "loading-quote"],
+      "description": "The plans, billed monthly or yearly, and the request for a port's own quote."
+    },
+    {
+      "id": "logo-wall",
+      "status": "stable",
+      "source": "local",
+      "requiredStates": ["static", "scrolling"],
+      "description": "The ports that run Tidewatch; it scrolls only when the visitor allows motion."
+    }
+  ]
+}

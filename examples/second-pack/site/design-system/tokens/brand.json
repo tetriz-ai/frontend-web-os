@@ -1,0 +1,14 @@
+{
+  "curve": {
+    "$type": "dimension",
+    "none": { "$value": "0px" },
+    "hint": { "$value": "2px" },
+    "soft": { "$value": "4px" }
+  },
+  "letter": {
+    "text": { "$type": "fontFamily", "$value": ["Fraunces", "Georgia", "serif"] },
+    "code": { "$type": "fontFamily", "$value": ["JetBrains Mono", "Menlo", "monospace"] },
+    "headline": { "$type": "typography", "$value": { "fontSize": "3.5rem", "fontWeight": 700, "lineHeight": 1.05, "letterSpacing": "-0.02em" } },
+    "reading": { "$type": "typography", "$value": { "fontSize": "1.125rem", "fontWeight": 400, "lineHeight": 1.6 } }
+  }
+}

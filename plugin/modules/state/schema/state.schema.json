@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:state",
+  "title": ".fwos/state.json",
+  "description": "Project-level fwos state: schema version, mode, platforms and path overrides.",
+  "type": "object",
+  "required": ["schema", "pluginVersion", "mode", "platforms"],
+  "properties": {
+    "schema": { "const": 1 },
+    "pluginVersion": { "type": "string" },
+    "name": { "type": "string" },
+    "mode": { "enum": ["new", "adopt", "spike"] },
+    "platforms": {
+      "type": "array",
+      "items": { "enum": ["web", "electron", "mac"] },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "createdAt": { "type": "string" },
+    "channels": { "type": "array", "items": { "type": "string" } },
+    "adopt": {
+      "description": "An adopted app's level (each includes the ones before it), when each was set, and the stages its team keeps. `fwos adopt` writes it.",
+      "type": "object",
+      "required": ["level"],
+      "properties": {
+        "level": { "enum": ["checks", "design", "delivery"] },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["level", "at"],
+            "properties": { "level": { "enum": ["checks", "design", "delivery"] }, "at": { "type": "string" } },
+            "additionalProperties": false
+          }
+        },
+        "keep": {
+          "description": "The stages the team keeps its own practice for, each with why and since when. fwos adds nothing there. `fwos adopt --keep` writes it.",
+          "type": "object",
+          "propertyNames": { "enum": ["idea", "design", "spec", "test-plan", "build", "acceptance"] },
+          "additionalProperties": {
+            "type": "object",
+            "required": ["reason", "at"],
+            "properties": { "reason": { "type": "string", "minLength": 1 }, "at": { "type": "string" } },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "paths": {
+      "type": "object",
+      "properties": {
+        "docs": { "type": "string" },
+        "designSystem": { "type": "string" },
+        "contract": { "type": "string" },
+        "tokensOut": { "type": "string" },
+        "apps": {
+          "type": "object",
+          "properties": { "web": { "type": "string" }, "electron": { "type": "string" }, "mac": { "type": "string" } },
+          "additionalProperties": false
+        },
+        "ui": {
+          "type": "object",
+          "properties": { "web": { "type": "string" }, "electron": { "type": "string" }, "mac": { "type": "string" } },
+          "additionalProperties": false
+        },
+        "source": { "type": "array", "items": { "type": "string" } },
+        "tests": { "type": "array", "items": { "type": "string" } },
+        "results": { "type": "array", "items": { "type": "string" } },
+        "ignore": { "type": "array", "items": { "type": "string" } },
+        "gated": { "type": "array", "items": { "type": "string" } },
+        "allowedBeforeSpec": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

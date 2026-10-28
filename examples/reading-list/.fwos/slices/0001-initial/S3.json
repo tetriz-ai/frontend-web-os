@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "slice": "S3",
+  "change": "0001-initial",
+  "title": "Delete with undo, then real use",
+  "platform": "web",
+  "modules": ["reading-list"],
+  "screens": ["list"],
+  "components": ["alert", "button"],
+  "states": ["list:ready"],
+  "acs": ["AC-reading-8"],
+  "dependsOn": ["S2"],
+  "status": "done"
+}

@@ -1,0 +1,323 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "path": "design-system/components.json",
+      "at": "2026-10-12T13:22:53.270Z",
+      "pluginVersion": "0.1.0",
+      "by": "design-system"
+    },
+    {
+      "path": "design-system/design-system.json",
+      "at": "2026-10-12T13:22:53.271Z",
+      "pluginVersion": "0.1.0",
+      "by": "design-system"
+    },
+    {
+      "path": "design-system/rules.yaml",
+      "at": "2026-10-12T13:22:53.271Z",
+      "pluginVersion": "0.1.0",
+      "by": "design-system"
+    },
+    {
+      "path": "design-system/tokens/base.json",
+      "at": "2026-10-12T13:22:53.271Z",
+      "pluginVersion": "0.1.0",
+      "by": "design-system"
+    },
+    {
+      "path": "design-system/tokens/dark.json",
+      "at": "2026-10-12T13:22:53.271Z",
+      "pluginVersion": "0.1.0",
+      "by": "design-system"
+    },
+    {
+      "path": "design-system/tokens/light.json",
+      "at": "2026-10-12T13:22:53.272Z",
+      "pluginVersion": "0.1.0",
+      "by": "design-system"
+    },
+    {
+      "path": "design-system/voice.md",
+      "at": "2026-10-12T13:22:53.272Z",
+      "pluginVersion": "0.1.0",
+      "by": "design-system"
+    },
+    {
+      "path": ".env.example",
+      "at": "2026-10-12T13:25:21.742Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": ".github/workflows/fwos.yml",
+      "at": "2026-10-12T13:25:21.744Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/app/(fwos-screens)/fwos-screens/[pageId]/page.tsx",
+      "at": "2026-10-12T13:25:21.744Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/app/(fwos-screens)/fwos-screens/page.tsx",
+      "at": "2026-10-12T13:25:21.744Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/app/globals.css",
+      "at": "2026-10-12T13:25:21.745Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/app/layout.tsx",
+      "at": "2026-10-12T13:25:21.745Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/app/page.tsx",
+      "at": "2026-10-12T13:25:21.745Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/e2e/defaults.spec.ts",
+      "at": "2026-10-12T13:25:21.746Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/e2e/home.spec.ts",
+      "at": "2026-10-12T13:25:21.746Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/next.config.ts",
+      "at": "2026-10-12T13:25:21.746Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/package.json",
+      "at": "2026-10-12T13:25:21.746Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/playwright.config.ts",
+      "at": "2026-10-12T13:25:21.747Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/postcss.config.mjs",
+      "at": "2026-10-12T13:25:21.747Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/features/README.md",
+      "at": "2026-10-12T13:25:21.748Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/screens/index.ts",
+      "at": "2026-10-12T13:25:21.749Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/screens/registry.tsx",
+      "at": "2026-10-12T13:25:21.749Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/data/index.ts",
+      "at": "2026-10-12T13:25:21.750Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/data/query-provider.tsx",
+      "at": "2026-10-12T13:25:21.750Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/lib/cn.ts",
+      "at": "2026-10-12T13:25:21.750Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/lib/format.ts",
+      "at": "2026-10-12T13:25:21.750Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/lib/index.ts",
+      "at": "2026-10-12T13:25:21.751Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/nav/index.ts",
+      "at": "2026-10-12T13:25:21.751Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/nav/nav.tsx",
+      "at": "2026-10-12T13:25:21.751Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/ui/alert.tsx",
+      "at": "2026-10-12T13:25:21.752Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/ui/badge.tsx",
+      "at": "2026-10-12T13:25:21.752Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/ui/button.tsx",
+      "at": "2026-10-12T13:25:21.752Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/ui/card.tsx",
+      "at": "2026-10-12T13:25:21.752Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/ui/empty-state.tsx",
+      "at": "2026-10-12T13:25:21.753Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/ui/index.ts",
+      "at": "2026-10-12T13:25:21.753Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/ui/skeleton.tsx",
+      "at": "2026-10-12T13:25:21.753Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/ui/spinner.tsx",
+      "at": "2026-10-12T13:25:21.753Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/ui/state-handler.tsx",
+      "at": "2026-10-12T13:25:21.754Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/ui/text-field.tsx",
+      "at": "2026-10-12T13:25:21.754Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/src/shared/ui/ui.test.tsx",
+      "at": "2026-10-12T13:25:21.754Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/tsconfig.build.json",
+      "at": "2026-10-12T13:25:21.755Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/tsconfig.json",
+      "at": "2026-10-12T13:25:21.755Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/vitest.config.ts",
+      "at": "2026-10-12T13:25:21.756Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "apps/web/vitest.setup.ts",
+      "at": "2026-10-12T13:25:21.756Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "docs/app/ia.json",
+      "at": "2026-10-12T13:25:21.756Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "package.json",
+      "at": "2026-10-12T13:25:21.757Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "packages/api-contract/fixtures/.gitkeep",
+      "at": "2026-10-12T13:25:21.757Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "packages/api-contract/openapi.yaml",
+      "at": "2026-10-12T13:25:21.758Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "packages/api-contract/package.json",
+      "at": "2026-10-12T13:25:21.758Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "packages/tokens/package.json",
+      "at": "2026-10-12T13:25:21.759Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "at": "2026-10-12T13:25:21.759Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    },
+    {
+      "path": "README.md",
+      "at": "2026-10-12T13:25:21.759Z",
+      "pluginVersion": "0.1.0",
+      "by": "scaffold"
+    }
+  ]
+}

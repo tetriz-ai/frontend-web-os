@@ -1,0 +1,61 @@
+{
+  "status": 200,
+  "body": [
+    {
+      "id": "itm_18",
+      "url": "https://news.example.com/2026/10/07/city-libraries-are-the-new-co-working-spaces-and-nobody-planned-it",
+      "title": "A very long headline about how city libraries quietly became the most popular co-working spaces of the decade, and what that means for the rest of us",
+      "savedAt": "2026-10-07T11:58:00.000Z",
+      "read": false
+    },
+    {
+      "id": "itm_17",
+      "url": "https://example.com/recipes/tortilla",
+      "title": "Tortilla de patatas: la receta clásica, paso a paso",
+      "savedAt": "2026-10-06T20:15:00.000Z",
+      "read": false
+    },
+    {
+      "id": "itm_16",
+      "url": "https://docs.example.org/handbook/accessibility",
+      "title": "Accessibility handbook",
+      "savedAt": "2026-10-04T08:00:00.000Z",
+      "read": true
+    },
+    {
+      "id": "itm_15",
+      "url": "https://example.org/essays/attention",
+      "title": "Where attention goes",
+      "savedAt": "2026-10-01T12:00:00.000Z",
+      "read": false
+    },
+    {
+      "id": "itm_14",
+      "url": "https://www.example.net/travel/rail-europe",
+      "title": "Crossing Europe by rail",
+      "savedAt": "2026-09-28T12:00:00.000Z",
+      "read": true
+    },
+    {
+      "id": "itm_13",
+      "url": "https://example.com/",
+      "title": "example.com",
+      "savedAt": "2026-09-15T12:00:00.000Z",
+      "read": false
+    },
+    {
+      "id": "itm_12",
+      "url": "http://legacy.example.net/archive/2019/12/plain-text",
+      "title": "Plain text forever",
+      "savedAt": "2026-08-30T12:00:00.000Z",
+      "read": true
+    },
+    {
+      "id": "itm_11",
+      "url": "https://example.jp/articles/kaizen",
+      "title": "改善: 小さな一歩の積み重ね",
+      "savedAt": "2026-03-12T12:00:00.000Z",
+      "read": false
+    }
+  ]
+}

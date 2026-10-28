@@ -1,0 +1,6 @@
+{
+  "status": 503,
+  "body": {
+    "message": "This browser isn't letting the app use its storage, so your list can't be read. Allow site data for this page (private windows often block it), then try again."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "tidewatch-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "test": "vitest run",
+    "e2e": "playwright test",
+    "check": "fwos check",
+    "tokens": "fwos tokens build"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@testing-library/react": "16.4.0",
+    "@types/react": "19.3.0",
+    "typescript": "6.0.2",
+    "vitest": "5.0.3"
+  }
+}

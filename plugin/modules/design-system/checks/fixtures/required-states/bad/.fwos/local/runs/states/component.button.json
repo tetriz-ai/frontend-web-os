@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "kind": "states",
+  "target": "component.button",
+  "fwos": "0.1.0",
+  "harness": {
+    "file": "apps/web/e2e/fwos-states.spec.ts",
+    "sha": "2f3aa6b5b292"
+  },
+  "revision": "b30641da471d",
+  "config": {
+    "server": "production build",
+    "browser": "chromium"
+  },
+  "at": "2026-10-07T00:00:00.000Z",
+  "observations": [
+    {
+      "state": "default",
+      "status": 200,
+      "found": true,
+      "nodes": 3,
+      "text": "Save",
+      "busy": 0,
+      "alerts": [],
+      "statuses": [],
+      "items": [],
+      "disabled": 0,
+      "invalid": 0
+    },
+    {
+      "state": "loading",
+      "status": 200,
+      "found": true,
+      "nodes": 3,
+      "text": "Save",
+      "busy": 0,
+      "alerts": [],
+      "statuses": [],
+      "items": [],
+      "disabled": 1,
+      "invalid": 0
+    }
+  ]
+}

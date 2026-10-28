@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "files": {
+    "packages/tokens/generated/tokens.css": {
+      "sha": "7299cff8c01b",
+      "kind": "generated",
+      "pluginVersion": "0.1.0",
+      "source": "design-system/"
+    },
+    "packages/tokens/generated/theme.css": {
+      "sha": "08fa9a385063",
+      "kind": "generated",
+      "pluginVersion": "0.1.0",
+      "source": "design-system/"
+    },
+    "packages/api-contract/generated/mock-fetch.ts": {
+      "sha": "d56f983e95a2",
+      "kind": "generated",
+      "pluginVersion": "0.1.0",
+      "source": "packages/api-contract/openapi.yaml + packages/api-contract/fixtures/"
+    },
+    "docs/app/reports/acceptance.md": {
+      "sha": "f9da4e8f2393",
+      "kind": "generated",
+      "pluginVersion": "0.1.0",
+      "source": "fwos report"
+    },
+    "apps/web/e2e/fwos-states.spec.ts": {
+      "sha": "2f3aa6b5b292",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "fwos harness"
+    },
+    "apps/web/e2e/fwos-ia.spec.ts": {
+      "sha": "1bffdfff083f",
+      "kind": "fwos",
+      "pluginVersion": "0.1.0",
+      "source": "fwos harness"
+    }
+  }
+}

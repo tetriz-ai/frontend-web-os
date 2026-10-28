@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "id": "0001-initial",
+  "title": "Initial app",
+  "route": "initial",
+  "step": "discovery",
+  "status": "open",
+  "createdAt": "2026-10-07",
+  "approvals": {}
+}

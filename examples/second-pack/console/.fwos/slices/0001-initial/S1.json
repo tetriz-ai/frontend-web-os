@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "slice": "S1",
+  "change": "0001-initial",
+  "title": "Berth board: today's berths, sorted by arrival, with the feed's stale state",
+  "platform": "web",
+  "modules": ["berths", "ui", "port-api", "readings"],
+  "screens": ["berths", "berth"],
+  "components": ["berth-grid", "vessel-chip"],
+  "states": ["berths:no-berths", "berths:stale"],
+  "acs": [],
+  "status": "done"
+}

@@ -1,0 +1,22 @@
+# Tidewatch site: its overrides of fwos's rule pack, and its own rule.
+schema: 1
+rules:
+  # Docs pages render HTML that lib/content.ts sanitises in one place before the page sees it.
+  no-dangerous-html:
+    exclude: ["app/(docs)/**"]
+custom:
+  - id: no-raw-img
+    title: Images go through next/image
+    rule: R-media
+    hardness: check
+    files: ["app/**/*.tsx", "components/**/*.tsx"]
+    exclude: ["**/*.test.*"]
+    pattern: '<img\b'
+    message: Use next/image's Image, so the site serves sized, lazily loaded images on a slow quay connection.
+    fix: Replace <img> with <Image> from 'next/image', with its width and height.
+    fixtures:
+      bad:
+        - '<img src="/ports/rotterdam.svg" alt="Port of Rotterdam" />'
+      good:
+        - '<Image src="/ports/rotterdam.svg" alt="Port of Rotterdam" width={120} height={40} />'
+ignore: []

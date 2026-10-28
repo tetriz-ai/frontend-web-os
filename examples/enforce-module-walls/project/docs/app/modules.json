@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "modules": [
+    { "name": "list", "path": "apps/web/src/features/list", "dependsOn": ["shared-ui"] },
+    { "name": "settings", "path": "apps/web/src/features/settings", "dependsOn": ["shared-ui"] },
+    { "name": "shared-ui", "path": "apps/web/src/shared/ui", "dependsOn": [] }
+  ]
+}

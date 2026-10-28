@@ -1,0 +1,43 @@
+{
+  "ui": {
+    "$type": "color",
+    "bg": {
+      "page": { "$value": "{foam.0}" },
+      "card": { "$value": "{foam.0}" },
+      "well": { "$value": "{foam.50}" },
+      "press": { "$value": "{foam.100}" }
+    },
+    "ink": {
+      "main": { "$value": "{deep.950}" },
+      "quiet": { "$value": "{foam.700}" },
+      "faint": { "$value": "{foam.600}" },
+      "off": { "$value": "{foam.300}" },
+      "reverse": { "$value": "{foam.0}" }
+    },
+    "edge": {
+      "thin": { "$value": "{foam.100}" },
+      "thick": { "$value": "{foam.200}" }
+    },
+    "action": {
+      "main": { "$value": "{deep.700}" },
+      "on-main": { "$value": "{foam.0}" },
+      "main-hover": { "$value": "{deep.800}" },
+      "alt": { "$value": "#1f5f4a" },
+      "on-alt": { "$value": "{foam.0}" }
+    },
+    "alert": {
+      "danger": { "fill": { "$value": "#fdecec" }, "ink": { "$value": "#9b1c1c" } },
+      "warn": { "fill": { "$value": "#fff1e0" }, "ink": { "$value": "#8a4500" } },
+      "notice": { "fill": { "$value": "#fdf7d8" }, "ink": { "$value": "#6b5400" } },
+      "note": { "fill": { "$value": "#e8f1fb" }, "ink": { "$value": "#1a4f86" } },
+      "ok": { "fill": { "$value": "#e6f4ec" }, "ink": { "$value": "#1d6b3f" } }
+    },
+    "plot": {
+      "tide": { "$value": "{deep.500}" },
+      "swell": { "$value": "#d9822b" },
+      "wind": { "$value": "#3a9d74" },
+      "draft": { "$value": "#a855a8" },
+      "rest": { "$value": "{foam.400}" }
+    }
+  }
+}

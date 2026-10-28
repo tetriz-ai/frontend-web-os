@@ -1,0 +1,6 @@
+{
+  "name": "app",
+  "dependencies": {
+    "tidy": "1.0.0"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "schema": 1,
+  "id": "0001-initial",
+  "title": "Initial app",
+  "route": "initial",
+  "step": "done",
+  "status": "done",
+  "createdAt": "2026-10-07",
+  "cursor": {
+    "pending": []
+  },
+  "approvals": {
+    "brief": {
+      "sha": "465d2c93a001",
+      "files": {
+        "docs/app/brief.md": "7ed84a9082e3"
+      },
+      "by": "Example maintainer",
+      "at": "2026-10-07T17:09:22.955Z",
+      "via": "chat"
+    },
+    "architecture": {
+      "sha": "d44fbb0e6a94",
+      "files": {
+        "docs/app/modules.json": "199c971ec9e9"
+      },
+      "by": "Example maintainer",
+      "at": "2026-10-07T17:10:16.340Z",
+      "via": "chat"
+    },
+    "design-system": {
+      "sha": "db7dff7ebccf",
+      "files": {
+        "design-system": "a744594cf9c6"
+      },
+      "by": "Example maintainer",
+      "at": "2026-10-08T07:56:56.169Z",
+      "via": "chat"
+    },
+    "screens": {
+      "sha": "0fa83bbb0353",
+      "files": {
+        "docs/app/ia.json": "a39c9d1f0f3f"
+      },
+      "by": "Example maintainer",
+      "at": "2026-10-07T17:14:18.656Z",
+      "via": "chat"
+    },
+    "spec": {
+      "sha": "116eed565043",
+      "files": {
+        "docs/app/spec.md": "88fac9d8842f",
+        "docs/app/test-plan.md": "d9459958796e"
+      },
+      "by": "Example maintainer",
+      "at": "2026-10-14T09:08:43.802Z",
+      "via": "pr"
+    },
+    "acceptance": {
+      "sha": "c4538213d7c8",
+      "files": {
+        "docs/app/reports/acceptance.md": "f9da4e8f2393"
+      },
+      "by": "Example maintainer",
+      "at": "2026-10-16T09:30:45.733Z",
+      "via": "pr"
+    }
+  },
+  "skips": [
+    {
+      "target": "research",
+      "reason": "sample app: research isn't what this example demonstrates",
+      "by": "Example maintainer",
+      "at": "2026-10-07T17:09:23.124Z"
+    }
+  ],
+  "lockedTests": {
+    "apps/web/src/features/reading-list/link.test.ts": {
+      "sha": "c95e55805493",
+      "at": "2026-10-07T17:21:10.269Z",
+      "evidence": "red",
+      "slice": "S1"
+    },
+    "apps/web/src/features/reading-list/local-repository.test.ts": {
+      "sha": "6ec884b429c0",
+      "at": "2026-10-07T17:21:10.269Z",
+      "evidence": "red",
+      "slice": "S1"
+    },
+    "apps/web/src/features/reading-list/reading-list.test.tsx": {
+      "sha": "779036c47e5f",
+      "at": "2026-10-07T17:21:10.269Z",
+      "evidence": "red",
+      "slice": "S1"
+    },
+    "apps/web/e2e/home.spec.ts": {
+      "sha": "0acf989b0d81",
+      "at": "2026-10-07T17:24:32.072Z",
+      "evidence": "existing",
+      "slice": "S1"
+    },
+    "apps/web/src/features/reading-list/saved-dates.test.ts": {
+      "sha": "2fad8bb44640",
+      "at": "2026-10-07T17:21:10.336Z",
+      "evidence": "existing",
+      "slice": "S1"
+    },
+    "apps/web/src/features/reading-list/read-and-filter.test.tsx": {
+      "sha": "1613e35cdd30",
+      "at": "2026-10-07T17:27:17.498Z",
+      "evidence": "red",
+      "slice": "S2"
+    },
+    "apps/web/e2e/read-and-filter.spec.ts": {
+      "sha": "3ca4a1639764",
+      "at": "2026-10-07T17:27:17.498Z",
+      "evidence": "red",
+      "slice": "S2"
+    },
+    "apps/web/src/features/reading-list/delete.test.tsx": {
+      "sha": "95dd9e4577a8",
+      "at": "2026-10-07T17:32:13.142Z",
+      "evidence": "red",
+      "slice": "S3"
+    },
+    "apps/web/e2e/delete.spec.ts": {
+      "sha": "8fe48491f8a4",
+      "at": "2026-10-07T17:32:13.142Z",
+      "evidence": "red",
+      "slice": "S3"
+    }
+  },
+  "redRuns": [
+    {
+      "at": "2026-10-07T17:21:10.269Z",
+      "failing": [
+        "src/features/reading-list/link.test.ts",
+        "src/features/reading-list/local-repository.test.ts",
+        "src/features/reading-list/reading-list.test.tsx",
+        "the first visit shows the zero state, and a saved link survives a reload @AC-reading-1 @AC-reading-9 @state:list:empty",
+        "a link can be saved with the keyboard alone @TC-default-keyboard @AC-reading-1",
+        "blocked storage shows the reason, and Try again recovers @AC-reading-10 @state:list:error"
+      ],
+      "slice": "S1"
+    },
+    {
+      "at": "2026-10-07T17:27:17.498Z",
+      "failing": [
+        "read state > marks a link read, then unread @AC-reading-5",
+        "the filter > with unread, marks Unread current and shows the matching rows newest first @AC-reading-6 @state:list:ready",
+        "the filter > with read, marks Read current and shows the matching rows newest first @AC-reading-6 @state:list:ready",
+        "the filter > with an unknown value, marks All current and shows the matching rows newest first @AC-reading-6 @state:list:ready",
+        "the filter > with no value, marks All current and shows the matching rows newest first @AC-reading-6 @state:list:ready",
+        "the filter > offers Show all when the filter hides every link @AC-reading-7 @state:list:filtered-empty",
+        "read state survives a reload @AC-reading-5",
+        "the filter lives in the address @AC-reading-6",
+        "Show all brings every link back @AC-reading-7 @state:list:filtered-empty"
+      ],
+      "slice": "S2"
+    },
+    {
+      "at": "2026-10-07T17:32:13.142Z",
+      "failing": [
+        "deleting a link > hides the row at once, focuses Undo, and Undo puts it back in its place @AC-reading-8",
+        "deleting a link > makes the deletion final when the 5 seconds pass @AC-reading-8",
+        "deleting a link > makes the first deletion final when another link is deleted @AC-reading-8",
+        "a deletion is final after the undo window, after a reload too @AC-reading-8"
+      ],
+      "slice": "S3"
+    }
+  ],
+  "unlocks": [
+    {
+      "path": "apps/web/e2e/home.spec.ts",
+      "reason": "getByRole('alert') also matches Next.js's always-present route announcer (#__next-route-announcer__, role=alert), so the locator is ambiguous in any Next app; scope it to the main landmark",
+      "reviewer": "Example maintainer",
+      "at": "2026-10-07T17:24:22.943Z",
+      "relockedAt": "2026-10-07T17:24:32.072Z"
+    }
+  ],
+  "signoffs": [
+    {
+      "item": "GAP-1",
+      "by": "Example maintainer",
+      "at": "2026-10-07T17:36:34.683Z",
+      "note": "Accepted for the first release: sync is AC-reading-11 (later). Nothing in this release talks to a server; local mode is proven end to end in a real browser."
+    }
+  ]
+}

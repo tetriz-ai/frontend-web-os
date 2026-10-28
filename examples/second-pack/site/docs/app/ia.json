@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "roles": ["visitor"],
+  "flags": [],
+  "pages": [
+    { "id": "home", "title": "Tidewatch", "route": "/", "kind": "nav", "order": 1, "states": ["ready"] },
+    { "id": "pricing", "title": "Pricing", "route": "/pricing", "kind": "nav", "order": 2, "states": ["ready", "quote-sent"] },
+    { "id": "docs", "title": "Docs", "route": "/docs/[...slug]", "kind": "nav", "order": 3, "states": ["ready", "missing-page"] },
+    { "id": "changelog", "title": "Changelog", "route": "/changelog/[[...release]]", "kind": "nav", "order": 4, "states": ["ready", "no-releases"] },
+    { "id": "blog", "title": "Blog", "route": "/blog", "kind": "nav", "order": 5, "states": ["ready", "no-posts"] },
+    { "id": "post", "title": "Blog post", "route": "/blog/[slug]", "kind": "drilldown", "parent": "blog", "states": ["ready"] },
+    {
+      "id": "legal",
+      "title": "Legal",
+      "route": "/legal/[doc]",
+      "kind": "unlinked",
+      "unlinkedReason": "Linked only from order emails and invoices, never from the site's own pages.",
+      "states": ["ready"]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+id: no-fixed-sleep
+title: Tests wait for conditions, never for time
+rule: R-tests
+platforms: [web, electron]
+hardness: check
+files: ["**/*.{test,spec}.{ts,tsx,js,jsx}", "**/e2e/**/*.{ts,tsx,js}"]
+exclude: []
+pattern: '\.waitForTimeout\(|new\s+Promise\(\s*\(?\s*\w*\s*\)?\s*=>\s*setTimeout\(|\bawait\s+sleep\('
+message: A fixed sleep makes tests slow and flaky. Wait for the condition you care about instead.
+fix: "Use await expect(locator).toBeVisible() or findBy* queries; for timers, use fake timers."
+knowledge: modules/rules/knowledge/testing.md
+fixtures:
+  bad:
+    - "await page.waitForTimeout(500);"
+    - "await new Promise((r) => setTimeout(r, 200));"
+  good:
+    - "await expect(page.getByRole('row')).toHaveCount(3);"
+    - "vi.advanceTimersByTime(200);"

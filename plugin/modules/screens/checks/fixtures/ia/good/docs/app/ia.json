@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "roles": [
+    "member",
+    "admin"
+  ],
+  "flags": [
+    "members-enabled"
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "title": "Home",
+      "route": "/",
+      "kind": "nav",
+      "states": [
+        "ready"
+      ]
+    },
+    {
+      "id": "settings",
+      "title": "Settings",
+      "route": "/settings",
+      "kind": "nav",
+      "states": [
+        "ready"
+      ]
+    },
+    {
+      "id": "members",
+      "title": "Members",
+      "route": "/members",
+      "kind": "nav",
+      "visibleTo": [
+        "admin"
+      ],
+      "flag": "members-enabled",
+      "states": [
+        "ready"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+@import "tailwindcss";
+/* Generated from design-system/ by `fwos tokens build`: slot variables, then a theme that exposes only the slots. */
+@import "../../../packages/tokens/generated/tokens.css";
+@import "../../../packages/tokens/generated/theme.css";
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  :focus-visible {
+    outline-color: var(--ds-state-focus);
+  }
+}

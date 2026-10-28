@@ -1,0 +1,17 @@
+{
+  "name": "tip-splitter",
+  "private": true,
+  "packageManager": "pnpm@10.34.5",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "typecheck": "pnpm --filter web typecheck",
+    "test": "pnpm --filter web test",
+    "e2e": "pnpm --filter web e2e",
+    "check": "fwos check",
+    "tokens": "fwos tokens build"
+  },
+  "devDependencies": {
+    "fwos-check": "file:.fwos/cli"
+  }
+}

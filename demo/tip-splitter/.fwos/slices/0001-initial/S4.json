@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "slice": "S4",
+  "change": "0001-initial",
+  "title": "Errors and recovery, Reset",
+  "platform": "web",
+  "modules": ["tip-calculator"],
+  "screens": ["calculator"],
+  "components": ["text-field", "segmented-control", "number-stepper", "button"],
+  "states": ["calculator:invalid-bill", "calculator:invalid-tip", "calculator:people-bounds", "calculator:empty"],
+  "acs": ["AC-calc-10", "AC-calc-11", "AC-calc-13", "AC-calc-14", "AC-calc-16", "AC-calc-17"],
+  "dependsOn": ["S3"],
+  "status": "done"
+}

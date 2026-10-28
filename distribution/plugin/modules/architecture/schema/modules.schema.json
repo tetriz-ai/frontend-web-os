@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:modules",
+  "title": "docs/app/modules.json",
+  "description": "The modular monolith as data: each module, its public entry and which modules it may depend on. `fwos check walls` enforces it.",
+  "type": "object",
+  "required": ["schema", "modules"],
+  "properties": {
+    "schema": { "const": 1 },
+    "modules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "path", "dependsOn"],
+        "properties": {
+          "name": { "type": "string", "pattern": "^[a-z0-9][a-z0-9/_-]*$" },
+          "path": { "type": "string", "minLength": 1 },
+          "kind": { "enum": ["feature", "shared", "app", "shell", "kernel", "platform", "step"] },
+          "entry": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Public entry files, relative to `path`. Defaults to index.ts / index.tsx."
+          },
+          "dependsOn": {
+            "type": "array",
+            "items": { "type": "string" },
+            "uniqueItems": true,
+            "description": "Module names this one may import. \"*\" means any module (shells and app routes)."
+          },
+          "bannedImports": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Package globs this module may not import, e.g. \"next/*\" in shared feature packages."
+          },
+          "description": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

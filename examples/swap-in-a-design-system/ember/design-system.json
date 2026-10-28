@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "name": "Ember",
+  "platforms": [
+    "web"
+  ],
+  "tokens": {
+    "shared": [
+      "tokens/palette.json"
+    ],
+    "modes": {
+      "light": [
+        "tokens/day.json"
+      ],
+      "dark": [
+        "tokens/night.json"
+      ]
+    }
+  },
+  "defaultMode": "light",
+  "slots": {
+    "surface.base": "color.canvas.default",
+    "surface.elevated": "color.canvas.raised",
+    "surface.subtle": "color.canvas.sunken",
+    "surface.interactive": "color.canvas.pressable",
+    "text.primary": "color.ink.strong",
+    "text.secondary": "color.ink.soft",
+    "text.muted": "color.ink.faint",
+    "text.disabled": "color.ink.off",
+    "text.inverted": "color.ink.reverse",
+    "border.faint": "color.line.light",
+    "border.default": "color.line.regular",
+    "brand.primary": "color.action.main",
+    "brand.primary-foreground": "color.action.main-ink",
+    "brand.primary-hover": "color.action.main-hover",
+    "brand.accent": "color.highlight.main",
+    "brand.accent-foreground": "color.highlight.ink",
+    "status.critical.bg": "color.signal.danger.surface",
+    "status.critical.text": "color.signal.danger.ink",
+    "status.warning.bg": "color.signal.warn.surface",
+    "status.warning.text": "color.signal.warn.ink",
+    "status.caution.bg": "color.signal.notice.surface",
+    "status.caution.text": "color.signal.notice.ink",
+    "status.info.bg": "color.signal.note.surface",
+    "status.info.text": "color.signal.note.ink",
+    "status.success.bg": "color.signal.ok.surface",
+    "status.success.text": "color.signal.ok.ink",
+    "radius.sm": "shape.corner.small",
+    "radius.md": "shape.corner.medium",
+    "radius.lg": "shape.corner.large",
+    "font.sans": "typeface.body",
+    "font.mono": "typeface.code"
+  },
+  "components": "components.json"
+}

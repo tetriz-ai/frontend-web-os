@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "files": {
+    "packages/tokens/generated/tokens.css": {
+      "sha": "1c38418aab18",
+      "kind": "generated",
+      "pluginVersion": "0.1.0",
+      "source": "design-system/"
+    }
+  }
+}

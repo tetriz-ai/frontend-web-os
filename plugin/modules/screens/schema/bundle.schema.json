@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:prototype-bundle",
+  "title": "docs/app/prototypes/<id>/bundle.json",
+  "description": "A prototype bundle: one feature's handoff, linking its visual artifact, its real-component companion, its state inventory, the build spec, the decision record when there is one, and the intended ia.json. `fwos prototype promote` pins each of them; `fwos prototype diff` compares the intended IA with the real app.",
+  "type": "object",
+  "required": ["schema", "id", "title", "pages", "visual", "companion", "states", "spec", "ia"],
+  "properties": {
+    "schema": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$", "description": "The feature, the name of the bundle's folder." },
+    "title": { "type": "string", "minLength": 1 },
+    "pages": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "The ia.json pages this feature adds or changes: each needs a companion and a section in the state inventory."
+    },
+    "visual": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/link" },
+      "description": "What it should look like: html or image files in the repository, a figma, storybook or url link (https), or a route in the app."
+    },
+    "companion": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/link" },
+      "description": "Each page rendered from registered components: a route in the app (the screens browser's /fwos-screens/<page>) or a storybook story, naming its page."
+    },
+    "states": { "type": "string", "minLength": 1, "description": "The state inventory: a Markdown file with a ## section per page and a line per state (- <state>: what it shows)." },
+    "spec": { "type": "string", "minLength": 1, "description": "The build spec, a file with an optional #heading." },
+    "decision": { "type": "string", "minLength": 1, "description": "The design decision record, when the feature has one: a file with an optional #heading or #<decision id>." },
+    "ia": { "type": "string", "minLength": 1, "description": "The intended ia.json: the whole app's IA as this feature leaves it." }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "link": {
+      "type": "object",
+      "required": ["kind", "ref"],
+      "properties": {
+        "kind": { "type": "string", "minLength": 1 },
+        "ref": { "type": "string", "minLength": 1, "description": "A path from the project root, an https URL, or an app route." },
+        "page": { "type": "string", "minLength": 1, "description": "For a companion: the page it renders." }
+      },
+      "additionalProperties": false
+    }
+  }
+}

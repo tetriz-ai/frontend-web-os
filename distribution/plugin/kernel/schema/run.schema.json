@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:run",
+  "title": ".fwos/local/runs/<kind>/<target>.json",
+  "description": "One test of fwos's harness, as `fwos harness record` keeps it, or one run of the team's own test script, as `fwos tests run` keeps it: what it saw, the revision of the code it ran on, and the harness that recorded it, if any. It counts only while both are current.",
+  "type": "object",
+  "required": [
+    "schema",
+    "kind",
+    "target",
+    "fwos",
+    "harness",
+    "revision",
+    "config",
+    "at",
+    "observations"
+  ],
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "kind": {
+      "enum": [
+        "states",
+        "ia",
+        "tests"
+      ],
+      "description": "states: one page's or component's state fixtures. ia: one role and flag setting. tests: one of the team's test scripts."
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1,
+      "description": "page.<id> or component.<id> for states; the role and the flags on, joined by +, for ia; the script for tests, after its folder and a / outside the root."
+    },
+    "fwos": {
+      "type": "string",
+      "description": "The fwos version that recorded it."
+    },
+    "harness": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "file",
+        "sha"
+      ],
+      "properties": {
+        "file": {
+          "type": "string"
+        },
+        "sha": {
+          "type": "string",
+          "description": "The content hash of the harness file when it ran."
+        }
+      },
+      "additionalProperties": false,
+      "description": "The harness file that ran; null for a run of the team's own tests, which no harness of fwos's recorded."
+    },
+    "revision": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "The content hash of what a run of the app depends on, when it ran; null when the code changed during the run."
+    },
+    "config": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "How it ran: the server, the browser, the viewport, or the command fwos ran."
+    },
+    "at": {
+      "type": "string"
+    },
+    "observations": {
+      "type": [
+        "array",
+        "object"
+      ],
+      "description": "What it saw: one entry per state for states, the visits and nav for ia, the script's run for tests."
+    }
+  },
+  "additionalProperties": false,
+  "if": {
+    "properties": {
+      "kind": {
+        "const": "tests"
+      }
+    }
+  },
+  "then": {
+    "properties": {
+      "harness": {
+        "type": "null"
+      },
+      "observations": {
+        "$ref": "#/$defs/testRun"
+      }
+    }
+  },
+  "else": {
+    "properties": {
+      "harness": {
+        "type": "object"
+      }
+    }
+  },
+  "$defs": {
+    "testRun": {
+      "type": "object",
+      "description": "One run of a test script, as `fwos tests run` ran it.",
+      "required": [
+        "script",
+        "dir",
+        "display",
+        "command",
+        "runner",
+        "browser",
+        "mapped",
+        "exit",
+        "results",
+        "cases"
+      ],
+      "properties": {
+        "script": {
+          "type": "string",
+          "description": "The package.json script."
+        },
+        "dir": {
+          "type": "string",
+          "description": "The folder of that package.json, . for the root."
+        },
+        "display": {
+          "type": "string",
+          "description": "How the team runs it: pnpm test."
+        },
+        "command": {
+          "type": "string",
+          "description": "The script's command, as package.json has it."
+        },
+        "runner": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "The runner fwos recognised, or null."
+        },
+        "browser": {
+          "type": "boolean",
+          "description": "The runner drives a real browser."
+        },
+        "mapped": {
+          "type": "boolean",
+          "description": "fwos read its results, so they count as evidence."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Why its results don't count, when they don't."
+        },
+        "exit": {
+          "type": "integer"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Its result files, relative to the root."
+        },
+        "cases": {
+          "type": "object",
+          "required": [
+            "passed",
+            "failed",
+            "skipped"
+          ],
+          "properties": {
+            "passed": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "failed": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "skipped": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

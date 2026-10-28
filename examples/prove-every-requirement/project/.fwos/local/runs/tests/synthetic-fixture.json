@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "kind": "tests",
+  "target": "synthetic-fixture",
+  "fwos": "0.1.0",
+  "harness": null,
+  "revision": "e3b0c44298fc",
+  "at": "2026-10-07T00:00:00.000Z",
+  "config": {
+    "evidence": "inputs-and-results-v1",
+    "testInputs": "e3b0c44298fc",
+    "result:results/vitest.xml": "8e4611a9c9eb056561c3409d7bf9d0562ba02689acf4fe6d3f61452c28692078"
+  },
+  "observations": {
+    "script": "synthetic-fixture",
+    "dir": ".",
+    "display": "synthetic fixture, not an execution",
+    "command": "synthetic fixture",
+    "runner": "fixture",
+    "browser": true,
+    "mapped": true,
+    "exit": 0,
+    "results": [
+      "results/vitest.xml"
+    ],
+    "cases": {
+      "passed": 1,
+      "failed": 1,
+      "skipped": 0
+    }
+  }
+}

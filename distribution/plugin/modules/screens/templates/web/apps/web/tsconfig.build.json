@@ -1,0 +1,7 @@
+{
+  // `next build` type-checks with this file: the app without its tests. So a red run (tests written
+  // before the code they import exists) can still build and serve the app for Playwright.
+  // `pnpm typecheck` checks everything, tests included.
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "**/*.test.ts", "**/*.test.tsx", "e2e", "vitest.config.ts", "vitest.setup.ts", "playwright.config.ts"]
+}

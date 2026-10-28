@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:fwos:schema:components",
+  "title": "design-system/components.json",
+  "description": "The component registry: every component the app may use, its status and the states it must render.",
+  "type": "object",
+  "required": ["schema", "components"],
+  "properties": {
+    "schema": { "const": 1 },
+    "registry": { "type": "string", "description": "A shadcn-compatible registry URL for `shadcn add`." },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "status", "requiredStates"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+          "status": { "enum": ["stable", "beta", "superseded", "removed"] },
+          "supersededBy": { "type": "string" },
+          "requiredStates": { "type": "array", "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" }, "uniqueItems": true },
+          "source": { "enum": ["shadcn", "fwos", "local"] },
+          "spec": { "type": "string" },
+          "description": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
